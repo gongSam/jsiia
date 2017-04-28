@@ -1,0 +1,37 @@
+<div class="dynamics-subbody">
+    <div class=" dynamics-subbody-nav">
+        <ul class="nav nav-pills nav-stacked nav-style">
+            <li><img class="dynamics-nav-pic img-responsive" src="../images/nav-pic/dynamics-members.jpg"/></li>
+            <li class="dynamics-nav-li" id="dynamics-nav1" role="presentation"><a class="dynamics-nav-font" href="/dynamics/dynamics-monitor">监管动态</a></li>
+            <li class="dynamics-nav-li" id="dynamics-nav2" role="presentation"><a class="dynamics-nav-font" href="/dynamics/dynamics-association ">协会动态</a></li>
+            <li class="dynamics-nav-li" id="dynamics-nav2" role="presentation"><a class="dynamics-nav-font" href="/dynamics/dynamics-members ">会员动态</a></li>
+        </ul>
+    </div>
+    <div class="dynamics-subbody-content">
+        <div class="panel panel-border panel-primary">
+            <div class="dynamics-rightbody-heading ">
+                <ol class="breadcrumb breadcrumb-style">
+                    <li ><a href="/dynamics">行业动态</a></li>
+                    <li ><a href="/dynamics/dynamics-monitor">会员动态</a></li>
+                </ol>
+            </div>
+            <div class="panel-body">
+                <div class="dynamics-subbodybr">
+                    <h2>
+                        <ul>
+                            <li class="nowb">会员动态</li>
+                        </ul>
+                    </h2>
+                    <ol>
+                        <% memberdynamics.forEach(function (memberpublish) { %>
+                        <li><span><font><%= memberpublish.memday %></font>/<%= memberpublish.memmonth %></span><a
+                                    href="/dynamics/<%= memberpublish._id %>/dynamics-members-content" target="_blank"
+                                    title="<%=memberpublish.memtitle %>"><%=memberpublish.memtitle %></a></li>
+                        <% }) %>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

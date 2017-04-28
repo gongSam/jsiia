@@ -1,0 +1,63 @@
+<div class="law-subbody">
+    <div class=" law-subbody-nav">
+        <ul class="nav nav-pills nav-stacked nav-style">
+            <li><img class="law-nav-pic img-responsive" src="../images/nav-pic/law-department-nav.jpg"/></li>
+            <li class="law-nav-li" id="law-nav1" role="presentation"><a class="law-nav-font" href="/law/law-regulations">法律法规</a></li>
+            <li class="law-nav-li" id="law-nav2" role="presentation"><a class="law-nav-font" href="/law/law-document ">规范性文件</a></li>
+            <li class="law-nav-li" id="law-nav2" role="presentation"><a class="law-nav-font" href="/law/law-department ">部门规章</a></li>
+        </ul>
+    </div>
+    <div class="law-subbody-content">
+        <div class="panel panel-border panel-primary">
+            <div class="law-rightbody-heading ">
+                <ol class="breadcrumb breadcrumb-style">
+                    <li ><a href="/law">法律法规</a></li>
+                </ol>
+            </div>
+            <div class="panel-body">
+                <div class="law-subbodybr">
+                    <h2>
+                        <ul>
+                            <li class="nowb">法律法规</li>
+                        </ul>
+                    </h2>
+                    <ol>
+                        <% reglaw.forEach(function (regpublish) { %>
+                        <li><a href="/law/<%= regpublish._id %>/law-regulations-content" target="_blank"
+                                    title="<%=regpublish.regtitle %>"><%=regpublish.regtitle %></a></li>
+                        <% }) %>
+
+                    </ol>
+                </div>
+                <div class="law-subbodybr">
+                    <h2>
+                        <ul>
+                            <li class="nowb">规范性文件</li>
+                        </ul>
+                    </h2>
+                    <ol>
+                        <% doclaw.forEach(function (docpublish) { %>
+                        <li><a href="/law/<%= docpublish._id %>/law-document-content" target="_blank"
+                                    title="<%=docpublish.doctitle %>"><%=docpublish.doctitle %></a></li>
+                        <% }) %>
+
+                    </ol>
+                </div>
+                <div class="law-subbodybr">
+                    <h2>
+                        <ul>
+                            <li class="nowb">部门规章</li>
+                        </ul>
+                    </h2>
+                    <ol>
+                        <% deplaw.forEach(function (deppublish) { %>
+                        <li><a href="/law/<%= deppublish._id %>/law-department-content" target="_blank"
+                                    title="<%=deppublish.deptitle %>"><%=deppublish.deptitle %></a></li>
+                        <% }) %>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

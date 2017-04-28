@@ -1,0 +1,46 @@
+.members-entry-background{
+    background:url(../../images/members-subbody/members-entry-background.jpg) no-repeat;
+    background-size:100% 100%;
+    height:530px;
+}
+
+.form-control{
+    width: 85%;
+}
+
+.col-md-4.col-sm-4.col-xs-4.size {
+    padding:10px;
+    margin-top: 130px;
+    border: 3px solid lightblue;
+}
+
+.col-md-4.col-sm-4.col-xs-4.size label{
+    font-family: "Microsoft YaHei";
+    color:white;
+    font-size: 22px;
+
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+
+    50% {
+        opacity: 0.5; /*中间状态 透明度为0*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+#defaultform
+{-webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 3.5s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+
+
+col-md-4.col-sm-4.col-xs-4.size input{
+    width:50px;
+}

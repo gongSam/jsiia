@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>部门规章</title>
+    <%- include('../../admin/header/header') %>
+    <link rel="stylesheet" href="/stylesheets/admin/admin-members.css"/>
+    <link rel="stylesheet" href="/stylesheets/admin/admin-members-update.css"/>
+
+</head>
+<% if (user.membersname=="admin3") { %>
+<body class="body">
+<div class="admin-header"><%- include('../../admin/admin-head-sidebar/admin-header') %></div>
+<div class="admin-wrapper">
+    <div class="admin-sider"><%- include('../../admin/admin-head-sidebar/admin-siderbar') %></div>
+    <div class="admin-body"><%- include('../../admin/admin-right-side/admin-members/admin-members-duesupdate') %></div>
+</div>
+<script>
+    $("#nav5").toggleClass("active");
+</script>
+</body>
+<% } else { %>
+<% } %>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>法律法规</title>
+    <%- include('../../admin/header/header') %>
+    <link rel="stylesheet" href="/stylesheets/admin/admin-law.css"/>
+    <link rel="stylesheet" href="/stylesheets/admin/admin-law-update.css"/>
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="/javascripts/ueditor/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="/javascripts/ueditor/ueditor.all.js"></script>
+</head>
+<body class="body">
+<% if (user.membersname=="admin3") { %>
+<div class="admin-header"><%- include('../../admin/admin-head-sidebar/admin-header') %></div>
+<div class="admin-wrapper">
+    <div class="admin-sider"><%- include('../../admin/admin-head-sidebar/admin-siderbar') %></div>
+    <div class="admin-body"><%- include('../../admin/admin-right-side/admin-law/admin-law-regupdate') %></div>
+</div>
+<script>
+    $("#nav3").toggleClass("active");
+</script>
+</body>
+<% } else { %>
+<% } %>
+</html>

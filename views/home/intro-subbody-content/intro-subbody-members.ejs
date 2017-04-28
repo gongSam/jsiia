@@ -1,0 +1,38 @@
+<div class="intro-subbody">
+    <div class=" intro-subbody-nav">
+        <ul class="nav nav-pills nav-stacked nav-style">
+            <li><img class="intro-nav-pic img-responsive" src="../images/nav-pic/intro-members-nav.jpg"/></li>
+            <li class="intro-nav-li" id="intro-nav1" role="presentation"><a class="intro-nav-font" href="/intro">协会简介</a></li>
+            <li class="intro-nav-li" id="intro-nav2" role="presentation"><a class="intro-nav-font" href="/intro/intro-gchapter">协会章程</a></li>
+            <li class="intro-nav-li" id="intro-nav4" role="presentation"><a class="intro-nav-font" href="/intro/intro-organization">组织架构</a></li>
+            <li class="intro-nav-li" id="intro-nav3" role="presentation"><a class="intro-nav-font" href="/intro/intro-members">专业委员会</a></li>
+            <li class="intro-nav-li" id="intro-nav5" role="presentation"><a class="intro-nav-font" href="/intro/intro-contact">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="intro-subbody-content">
+        <div class="panel panel-border panel-primary">
+            <div class="intro-rightbody-heading ">
+                <ol class="breadcrumb breadcrumb-style">
+                    <li><a href="/intro">关于协会</a></li>
+                    <li><a href="/intro">专业委员会</a></li>
+                </ol>
+            </div>
+            <div class="panel-body">
+                <table class="table table-responsive table-bordered table-striped bs-events-table">
+                    <thead>
+                    <tr>
+                        <th>单位名称</th>
+                    </tr>
+                    </thead>
+                    <% memberprofessional.forEach(function (memintro) { %>
+                    <tbody>
+                    <tr>
+                        <td><%= memintro.memptitle %></td>
+                    </tr>
+                    </tbody>
+                    <% }) %>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

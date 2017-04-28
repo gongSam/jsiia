@@ -1,0 +1,244 @@
+
+.ld_bxzc_navbg {
+    width: auto;
+    height: 44px;
+    border-top: 1px solid #d19e35;
+    border-bottom: 5px solid #b38223;
+    position: relative; /*margin-bottom:-130px;margin-top:80px;*/
+    z-index: 20;
+    background: #e0a32c;
+    overflow: visible;
+}
+
+.ld_bxzc_nav {
+    width: 1100px;
+    height: 44px;
+    margin: 0 auto;
+    overflow: visible;
+    position: relative;
+}
+
+.ld_bxzc_nav ul {
+    height: 44px;
+    margin-left: 5px;
+}
+
+.ld_bxzc_nav ul li {
+    float: left;
+    display: block;
+    height: 44px;
+    line-height: 44px;
+}
+
+.ld_bxzc_nav ul li a {
+    display: block;
+    padding: 0px;
+    font-size: 15px;
+    height: 44px;
+    line-height: 44px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ld_bxzc_nav ul li a:hover {
+    text-decoration: none;
+}
+
+.ld_bxzc_nav ul li a span.span_na {
+    width: 19px;
+    height: 50px;
+    display: block;
+    float: left;
+}
+
+.ld_bxzc_nav ul li a span.span_nb {
+    height: 50px;
+    display: block;
+    float: left;
+    color: #fff;
+}
+
+.ld_bxzc_nav ul li a span.span_nc {
+    width: 19px;
+    height: 50px;
+    display: block;
+    float: left;
+}
+
+.ld_bxzc_nav ul li a span.span_a {
+    width: 19px;
+    height: 50px;
+    display: block;
+    background: url(../images/newimages/ld_bxzc_synav_bg_03.png) no-repeat;
+    float: left;
+}
+
+.ld_bxzc_nav ul li a span.span_b {
+    height: 50px;
+    display: block;
+    background: url(../images/newimages/ld_bxzc_synav_bg_05.png) repeat-x;
+    float: left;
+    color: #b38223;
+}
+
+.ld_bxzc_nav ul li a span.span_c {
+    width: 19px;
+    height: 50px;
+    display: block;
+    background: url(../images/newimages/ld_bxzc_synav_bg_07.png) no-repeat;
+    float: left;
+}
+
+------------------------------------------------------------------------------------------------------------------------------
+<% monitorpublish.forEach(function (monipublish) { %>
+
+                        <li><span><font><%- monipublish.moniday %></font>/<%- monipublish.monimonth %>
+                                    </span><a href="/notice/<%- monipublish._id %>/notice-monitor-content"
+                                              target="_blank"
+                                              title="<% - monipublish.monititle %>"></a><%- monipublish.monititle %></li>
+
+                        <% }) %>
+---------------------------------------------------------------------------------------------------------------------------------
+
+                            <form id="defaultform" role="form" method="post" enctype="application/json">
+                                <div class="form-group">
+                                    <label>通知或公告名</label>
+                                    <input class="form-control" placeholder="请输入通知或公告名" type="text" name="assocititle"
+                                    value=<%= associonepublish.assocititle%>>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>月份</label>
+                                    <input class="form-control" placeholder="请输入月份" type="text" name="associmonth"
+                                           value=<%= associonepublish.associmonth%>>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>天数</label>
+                                    <input class="form-control" placeholder="请输入天数" type="text" name="associday"
+                                           value=<%= associonepublish.associday%>>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>通知内容</label>
+                                    <script id="container" name="associbio" type="text/plain"
+                                            value=<%- associonepublish.associbio%>>
+                                    </script>
+                                </div>
+
+                            </form>
+ ---------------------------------------------------------------------------------------------------------------------------------
+ <!--<script id="container" name="associbio" type="text/plain"
+                                             value=<%- associonepublish.associbio %>>
+                                     </script>-->
+ ---------------------------------------------------------------------------------------------------------------------------------
+
+data-toggle="dropdown" role="button" aria-haspopup="true"
+				   aria-expanded="false"
+----------------------------------------------------------------------------------------------------------------------------------
+
+       <div id="footer-default" class="footer-default" style=" ">
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <p class="no-margin" style="font-size:12px!important;">
+                                江苏省保险中介行业协会copyright@2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="http://www.xa.gov.cn/ptl/def/def/index_1121_6930_ci_num_1.html"
+                                   target="_blank">
+                                    联系我们
+                                </a>
+                                |
+                                <a href="http://www.xa.gov.cn/ptl/def/def/index_1121_6930_ci_num_4.html"
+                                   target="_blank">
+                                    协会简介
+                                </a>
+                                |
+                                <a href="http://www.xa.gov.cn/ptl/def/def/index_1121_6930_ci_num_2.html"
+                                   target="_blank">
+                                    友情链接
+                                </a>
+                                |
+                                <a href="http://www.xa.gov.cn/ptl/def/def/index_1121_6930_ci_num_3.html"
+                                   target="_blank">
+                                    协会会员
+                                </a>
+                                &nbsp;&nbsp;&nbsp;
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 pull-right">
+
+
+
+                            <a href="index.html">
+          <span id="_ideConac">
+            </span></a>
+                            <a href="//bszs.conac.cn/sitename?method=show&amp;id=0A5537536EC43D83E053022819ACDDA0"
+                               target="_blank">
+                                <img id="imgConac" vspace="0" hspace="0" border="0" src="//dcs.conac.cn/image/red.png"
+                                     data-bd-imgshare-binded="1" style="width: 40px;">
+                            </a>
+                            <a style="cursor:default;text-decoration:none;">
+                                陕ICP备05011550号
+                            </a>
+
+                            <span id="cnzz_stat_icon_4591279">
+            <a href="http://www.cnzz.com/stat/website.php?web_id=4591279" target="_blank" title="站长统计">
+              <img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic1.gif">
+            </a>
+          </span>
+
+                            <span id="_span_jiucuo" style="margin-left:15px;"><img onclick="Link('6101000007')"
+                                                                                   style="margin:0;border:0;cursor: pointer;"
+                                                                                   src="http://121.43.68.40/exposure/images/jiucuo.png?v=6101000007"></span>
+                            <script id="_jiucuo_" sitecode="6101000007"
+                                    src="http://pucha.kaipuyun.cn/exposure/jiucuo.js">
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ -------------------------------------------------------------------------------------------------------------------------------
+<input id="hidden_UT_CAT_MDDATA_4377787_1_pindex"
+                                           name="hidden_UT_CAT_MDDATA_4377787_1_pindex" type="hidden" value="0">
+                                    <input id="hidden_UT_CAT_MDDATA_4377787_1_where"
+                                           name="hidden_UT_CAT_MDDATA_4377787_1_where" type="hidden"
+                                           value=" md.PUBSTATE='发布' and md.trid in(select rm.mddid from ut_cat_rscmdd rm where rm.isshow='是' and rm.rscid=4377787)">
+                                    <input
+                                            id="hidden_UT_CAT_MDDATA_4377787_1_CiTrid"
+                                            name="hidden_UT_CAT_MDDATA_4377787_1_CiTrid" type="hidden" value="null">
+                                    <input
+                                            id="hidden_UT_CAT_MDDATA_4377787_1_CiEditMode"
+                                            name="hidden_UT_CAT_MDDATA_4377787_1_CiEditMode" type="hidden"
+                                            value="null">
+                                    <input id="hidden_UT_CAT_MDDATA_4377787_1_CiTableMan"
+                                           name="hidden_UT_CAT_MDDATA_4377787_1_CiTableMan"
+                                           type="hidden" value="null">
+                                    <input
+                                            id="hidden_UT_CAT_MDDATA_4377787_1_RowCount"
+                                            name="hidden_UT_CAT_MDDATA_4377787_1_RowCount" type="hidden"
+                                            value="3">
+                                    <input
+                                            id="hidden_UT_CAT_MDDATA_4377787_1_PageCount"
+                                            name="hidden_UT_CAT_MDDATA_4377787_1_PageCount" type="hidden"
+                                            value="1">
+                                    <input
+                                            id="hidden_UT_CAT_MDDATA_4377787_1_PageNumber"
+                                            name="hidden_UT_CAT_MDDATA_4377787_1_PageNumber" type="hidden"
+                                            value="0">
+                                    <input
+                                            id="hidden_UT_CAT_MDDATA_4377787_1_PagerCmd"
+                                            name="hidden_UT_CAT_MDDATA_4377787_1_PagerCmd" type="hidden" value="">
+                                    <input
+                                            id="hidden_UT_CAT_MDDATA_4377787_1_intoTop"
+                                            name="hidden_UT_CAT_MDDATA_4377787_1_intoTop" type="hidden"
+                                            value="null">
+                                    <input
+                                            id="hidden_UT_CAT_MDDATA_4377787_1_order"
+                                            name="hidden_UT_CAT_MDDATA_4377787_1_order" type="hidden"
+                                            value="INFODATE DESC">
+------------------------------------------------------------------------------------------------------------------------------------------
+<%- include('../../home/focus-subbody-content/focus-subbody-focus') %>

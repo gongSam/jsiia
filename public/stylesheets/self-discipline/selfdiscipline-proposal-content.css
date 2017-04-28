@@ -1,0 +1,16 @@
+
+.self-discipline-subbody {
+     background-color:#f8f8f8;
+     height:726px;
+ }
+
+.selfdiscipline-proposal-content {
+    padding: 40px 250px;
+}
+hr.selfdiscipline-proposal-line {
+    border-top: 1px solid #337ab7;
+}
+
+.self-discipline-subbodybr ol li {
+    border-bottom: 1px dashed;
+}

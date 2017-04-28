@@ -1,0 +1,23 @@
+<div class="focus-subbody">
+    <div class="focus-subbody-content">
+            <div class="focus-subbodybr">
+                <ol>
+                    <% focusalls.forEach(function (focus) { %>
+                    <li><div class=" col-md-7 col-sm-7 col-xs-7 ">
+                            <a href="/focus/<%= focus._id %>/focus-content" target="_blank"
+                               title="<%= focus.ftitle %>"><%= focus.ftitle %></a>
+                        </div>
+                        <div class=" col-md-5 col-sm-5 col-xs-5 ">
+                            <span><font><%= focus.fday %></font>/<%= focus.fmonth %>/<%= focus.fyear %></span>
+                        </div>
+                    </li>
+                    <% }) %>
+                </ol>
+            </div>
+    </div>
+    <div class=" focus-subbody-nav">
+        <ul class="nav nav-pills nav-stacked nav-style">
+            <li><img class="focus-nav-pic img-responsive" src="../images/nav-pic/focus-nav.jpg"/></li>
+        </ul>
+    </div>
+</div>

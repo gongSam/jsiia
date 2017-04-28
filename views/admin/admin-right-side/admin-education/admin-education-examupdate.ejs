@@ -1,0 +1,31 @@
+<div class="admin-subbody">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">教育</h3>
+        </div>
+        <div class="panel-body">
+            <form id="defaultform" role="form" method="post" enctype="application/json" action="/admin/admin-education/<%= examoneeducation._id %>/examupdate">
+                <div class="form-group">
+                    <label>教育</label>
+                    <input class="form-control" placeholder="请输入教育" type="text" name="etitle"
+                           value=<%= examoneeducation.etitle %>>
+                </div>
+
+                <div class="form-group">
+                    <label>教育内容</label>
+
+                    <textarea id="container"  class="admin-modal-container" name="ebio"
+                              type="text/plain"> <%- examoneeducation.ebio %></textarea>
+                </div>
+                <input type="submit" class="btn  btn-primary" value="修改">
+            </form>
+        </div>
+        <!--<script type="text/javascript" src="../public/javascripts/update.js">-->
+        <script type="text/javascript">
+            $('#myModal').modal('show')
+            var ue = UE.getEditor('container');
+        </script>
+    </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,25 @@
+<div class="admin-subbody">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">会员会费</h3>
+        </div>
+        <div class="panel-body">
+            <form id="defaultform" role="form" method="post" enctype="application/json" action="/admin/admin-members/<%= onedues._id %>/duesupdate">
+                <div class="form-group">
+                    <label>会员名称</label>
+                    <input class="form-control" type="text" name="membersname"
+                           value=<%= onedues.membersname %>>
+                </div>
+
+                <div class="form-group">
+                    <label>会员会费</label>
+                    <input class="form-control"  type="text" name="ddues"
+                           value=<%= onedues.ddues %>>
+                </div>
+
+                <input type="submit" class="btn  btn-primary" value="修改">
+            </form>
+        </div>
+
+    </div>
+</div>

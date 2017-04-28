@@ -1,0 +1,23 @@
+<head>
+    <title>监管动态</title>
+    <%- include('../header/header') %>
+    <link rel="stylesheet" href="/stylesheets/dynamics/dynamics.css"/>
+    <link rel="stylesheet" href="/stylesheets/dynamics/dynamics-monitor-content.css"/>
+    <script type="text/javascript" src="/javascripts/webjs/dynamics/dynamics.js"></script>
+
+</head>
+<body class="dynamics-body">
+<%- include('../headercontent/public-header-nav') %>
+<%- include('../nav/public-nav') %>
+
+<div class="dynamics-monitor-content">
+    <h2>
+        <center><strong><%= monidynamics.dmonititle %></strong></center>
+    </h2>
+    <hr class="dynamics-monitor-line"/>
+    <div><%- monidynamics.dmonibio %></div>
+</div>
+
+<%- include('../footer/public-footer') %>
+</body>
+</html>

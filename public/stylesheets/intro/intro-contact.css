@@ -1,0 +1,33 @@
+.intro-footer {
+    margin: 0px;
+}
+
+.intro-subbody {
+    background-color:#f8f8f8;
+    height: 855px;
+}
+
+.panel-body.panel-body-high>h1{
+    margin-bottom: 30px;
+}
+
+img.intro-panel-pic {
+    padding: 0px;
+}
+
+.intro-map-size{
+    margin:0 auto;
+    width: 697px;
+    height: 550px;
+    border: 1px solid rgb(204, 204, 204);
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    background-image: url(http://api.map.baidu.com/images/bg.png);
+    color: rgb(0, 0, 0);
+}
+
+.col-md-8>h4{
+    margin:20px;
+    line-height:2;
+}

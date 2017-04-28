@@ -1,0 +1,21 @@
+
+img.img-responsive.position {
+    padding: 15px 200px 0px 175px;
+    opacity: 0.1;
+}
+
+.self-discipline-subbody {
+    background-color:#f8f8f8;
+    height:840px;
+}
+
+.selfdiscipline-chapter-content {
+    padding: 40px 250px;
+}
+hr.selfdiscipline-chapter-line {
+    border-top: 1px solid #337ab7;
+}
+
+.self-discipline-subbodybr ol li {
+    border-bottom: 1px dashed;
+}

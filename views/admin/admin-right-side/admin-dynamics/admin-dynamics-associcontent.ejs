@@ -1,0 +1,36 @@
+<div class="admin-subbody">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">协会动态</h3>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped bs-events-table">
+                    <thead>
+                    <tr>
+                        <th>日期</th>
+                        <th>协会动态名</th>
+                        <th>功能</th>
+                    </tr>
+                    </thead>
+                    <% association1dynamics.forEach(function (associdynamics) { %>
+                    <tbody>
+                    <tr>
+                        <td><%= associdynamics.dassociday %>/<%= associdynamics.dassocimonth %></td>
+                        <td><%= associdynamics.dassocititle %></td>
+                        <td>
+                            <div class="item">
+                                <a href="/admin/<%= associdynamics._id %>/dassociremove"><span
+                                            class="glyphicon glyphicon-trash color"/> </a>
+                                <a href="/admin/admin-dynamics/<%= associdynamics._id %>/admin-dynamics-associup"><span
+                                            class="glyphicon glyphicon-pencil"/> </a>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <% }) %>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

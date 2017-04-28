@@ -1,0 +1,279 @@
+body.self-discipline-body {
+    min-width: 960px;
+}
+.navbar-header {
+    width: auto;
+    height: 80px;
+    position: relative;
+    z-index: 20;
+}
+
+a.navbar-brand.position {
+    padding: 0;
+    padding-left: 50px;
+}
+/*------------self-discipline-header-------*/
+.self-discipline-header{
+    margin-bottom:45px;
+}
+/*------------self-discipline-nav----------*/
+
+nav.navbar.navbar-background {
+    background-color: #337ab7;
+    font-family: "Microsoft YaHei" ! important;
+    font-size: 18px;
+    width: auto;
+    height: 44px;
+    position: relative;
+    z-index: 20;
+    overflow: visible;
+    border-bottom: 5px solid #0163b8;
+    border-top: 1px solid #0163b8;
+}
+
+
+.navbar-header.self-discipline-nav {
+    height: 50px;
+}
+
+a.dropdown-toggle.style{
+    height: 50px;
+    display: block;
+    color: #fff;
+}
+
+a.active-style {
+    height: 50px;
+    display: block;
+    color: #fff;
+}
+
+ul.nav.position {
+    clear: both;
+    display: table;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar .nav > li > a:hover {
+    color:blue;
+    background-color: lightblue;
+}
+/*-----------self-discipline-subbody-------*/
+
+.self-discipline-subbody {
+    background-color:#f8f8f8;
+    height: 650px;
+}
+
+.self-discipline-subbody-nav{
+    float:left;
+    width:30%;
+    padding-left:180px;
+    position: inherit;
+}
+
+ul.nav.nav-pills.nav-stacked.nav-style {
+    font-size: 18px;
+    text-align: center;
+}
+
+.nav > li > a.self-discipline-nav-font{
+    color:black;
+    font-family: "Microsoft YaHei" ;
+}
+
+.nav > li.self-discipline-nav-li{
+    border: 1px solid #cdc9c9;
+    -webkit-box-shadow:0 0 10px 1px #ccc;
+    -moz-box-shadow:0 0 10px 1px #ccc;
+    box-shadow:0 0 10px 1px #ccc;
+}
+
+.nav > li > img.self-discipline-nav-pic{
+    border: 1px solid #cdc9c9;
+    -webkit-box-shadow:0 0 10px 1px #ccc;
+    -moz-box-shadow:0 0 10px 1px #ccc;
+    box-shadow:0 0 10px 1px #ccc;
+}
+
+.self-discipline-subbody-content{
+    float: left;
+    width:70%;
+    height:620px;
+    padding-left: 5px;
+    padding-right:180px;
+}
+
+.panel.panel-border.panel-primary {
+    border: 1px solid #cdc9c9;
+    -webkit-box-shadow: 0 0 10px 1px #ccc;
+    -moz-box-shadow: 0 0 10px 1px #ccc;
+    box-shadow: 0 0 10px 1px #ccc;
+}
+
+img.self-discipline-panel-pic{
+    padding: 60px;
+}
+p.self-discipline-panel-p{
+    line-height: 3;
+    padding: 0 40px;
+}
+
+.breadcrumb.breadcrumb-style {
+    font-family: microsoft yahei;
+    background: #428bca;
+    padding-left: 60px;
+}
+
+/*------------footer--------------*/
+
+.self-discipline-footer {
+    background-color:#f2fafc;
+}
+
+.self-discipline-footer-fonter{
+    font-family:"Microsoft YaHei"
+}
+
+img.footerlogo {
+    margin-top: 10px;
+    width: 222px;
+}
+
+.row.self-discipline-row {
+    margin: 20px;
+}
+
+img.footerqr {
+    margin: 6px;
+    width: 45%;
+    float: left;
+}
+
+img.self-discipline-footer-linklogo {
+    margin-top: 7px;
+}
+/*------self-discipline-right-body----------*/
+
+.self-discipline-subbodybr {
+    width: 530px;
+    margin:0 auto;
+}
+
+.self-discipline-subbodybr h2 {
+    width: 530px;
+    height: 42px;
+    border-bottom: 1px solid #e0d7d2;
+    margin-bottom: 10px;
+}
+
+.self-discipline-subbodybr h2 ul {
+    float: left;
+    width: 170px;
+}
+
+.self-discipline-subbodybr h2 ul li {
+    float: left;
+    color: #333333;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    width: 85px;
+    text-align: center;
+    height: 26px;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.self-discipline-subbodybr h2 ul li.nowb {
+    color: #fff;
+    font-weight: bold;
+    background: url(../../images/quick-nav/nav-body.jpg) no-repeat;
+    cursor: pointer;
+}
+
+.self-discipline-subbodybr h2 a {
+    float: right;
+    display: block;
+    width: 6px;
+    height: 12px;
+    margin-top: 14px;
+    padding-right: 5px;
+}
+
+.self-discipline-subbodybr ol {
+}
+
+.self-discipline-subbodybr ol li {
+    border-bottom: 1px dashed;
+    width: 447px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    line-height: 27px;
+}
+
+.self-discipline-subbodybr ol li a {
+    color: #333333;
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+
+.self-discipline-subbodybr ol li a:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.self-discipline-subbodybr ol li span {
+    color: #c1c5d3;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-right: 14px;
+}
+
+.self-discipline-subbodybr ol li span font {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+img.img-responsive.position {
+    margin: 100px;
+    opacity: 0.1;
+}
+/*------------footer--------------*/
+
+.public-footer {
+    background: url(../../images/footer/footer-background.jpg) no-repeat;
+    background-size: 100% 92%;
+}
+
+.public-footer-fonter{
+    font-family:"Microsoft YaHei"
+}
+img.footerlogo.img-responsive {
+    padding-top: 30px;
+    margin-left: -50px;
+}
+
+.row.public-row {
+    margin: 20px;
+}
+
+img.footerqr {
+    margin: 3px;
+    width: 85%;
+}
+
+img.public-footer-linklogo {
+    margin-top: 7px;
+
+}
+img.public-footer-linkmember{
+    overflow: hidden;
+    width:100px;
+    height:33px;
+    margin-top:3px;
+}

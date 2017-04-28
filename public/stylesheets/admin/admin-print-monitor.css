@@ -1,0 +1,16 @@
+/*-------------admin---------*/
+
+a {
+    color: #428bca;
+    text-decoration: none;
+}
+
+.admin-sider {
+    width: 20%;
+    float: left;
+}
+
+.admin-body {
+    width: 80%;
+    float: left;
+}

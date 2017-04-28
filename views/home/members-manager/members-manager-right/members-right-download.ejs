@@ -1,0 +1,46 @@
+<div class="admin-subbody">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">欢迎来到管理控制台--下载文件</h3>
+        </div>
+        <div class="panel-body">
+            <div class="members-subbodybr">
+                <div class=" col-md-7 col-sm-7 col-xs-7 ">
+                    <h2>
+                        <strong>下载文件</strong>
+                    </h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped bs-events-table">
+                            <thead>
+                            <tr>
+                                <th>文件名</th>
+                                <th>文件</th>
+                                <th>功能</th>
+                            </tr>
+                            </thead>
+                            <% allmdownload.forEach(function (download) { %>
+                            <tbody>
+                            <tr>
+                                <td><%= download.downfiletitle%></td>
+                                <td><a href="../../uploadfiles/<%= download.downfile %>"
+                                       title=<%= download.downfiletitle %>> <%= download.downfiletitle %></a></td>
+                                <td>
+                                    <div class="item">
+                                        <a href="../../uploadfiles/<%= download.downfile %>" > <span class="glyphicon glyphicon-save"/> </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                            <% }) %>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-5 ">
+                    <img class="img-responsive" src="../../images/members-subbody/members-emergency-img.png"/>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

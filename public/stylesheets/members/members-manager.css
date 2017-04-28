@@ -1,0 +1,41 @@
+/*-------------general--------*/
+
+a {
+    color: #428bca;
+    text-decoration: none;
+}
+
+a.navbar-brand.position {
+    height: 95px;
+}
+
+.members-sider {
+    width: 20%;
+    float: left;
+}
+
+.members-body {
+    width: 80%;
+    float: left;
+}
+
+/*-------subbody--------*/
+
+.members-manager-button {
+    width: 60%;
+    padding: 10px 10px;
+}
+
+.members-manager-img{
+    margin: 60px;
+    display: inline-block;
+    width: 224px;
+    opacity: 0.1;
+}
+
+a.col-md-4.col-sm-4.col-xs-4.btn.size.btn-info {
+    padding: 33px 12px;
+    border-radius: 0px;
+    border-color: #ffffff;
+}
+

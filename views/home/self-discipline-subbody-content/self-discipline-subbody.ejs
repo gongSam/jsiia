@@ -1,0 +1,63 @@
+<div class="self-discipline-subbody">
+    <div class=" self-discipline-subbody-nav">
+        <ul class="nav nav-pills nav-stacked nav-style">
+            <li><img class="self-discipline-nav-pic img-responsive" src="../images/nav-pic/self-discipline-nav.jpg"/></li>
+            <li class="self-discipline-nav-li" id="self-discipline-nav1" role="presentation"><a class="self-discipline-nav-font" href="/self-discipline/selfdiscipline-proposal">倡议书</a></li>
+            <li class="self-discipline-nav-li" id="self-discipline-nav2" role="presentation"><a class="self-discipline-nav-font" href="/self-discipline/selfdiscipline-risk ">风险提示函</a></li>
+            <li class="self-discipline-nav-li" id="self-discipline-nav2" role="presentation"><a class="self-discipline-nav-font" href="/self-discipline/selfdiscipline-chapter ">专委会规程</a></li>
+        </ul>
+    </div>
+    <div class="self-discipline-subbody-content">
+        <div class="panel panel-border panel-primary">
+            <div class="self-discipline-rightbody-heading ">
+                <ol class="breadcrumb breadcrumb-style">
+                    <li ><a href="/self-discipline">自律规范</a></li>
+                </ol>
+            </div>
+            <div class="panel-body">
+                <div class="self-discipline-subbodybr">
+                    <h2>
+                        <ul>
+                            <li class="nowb">倡议书</li>
+                        </ul>
+                    </h2>
+                    <ol>
+                        <% prodiscipline.forEach(function (discipline) { %>
+                        <li><a href="/self-discipline/<%= discipline._id %>/selfdiscipline-proposal-content" target="_blank"
+                               title="<%=discipline.disctitle %>"><%=discipline.disctitle %></a></li>
+                        <% }) %>
+
+                    </ol>
+                </div>
+                <div class="self-discipline-subbodybr">
+                    <h2>
+                        <ul>
+                            <li class="nowb">专委会规章</li>
+                        </ul>
+                    </h2>
+                    <ol>
+                        <% chapdiscipline.forEach(function (discipline) { %>
+                        <li><a href="/self-discipline/<%= discipline._id %>/selfdiscipline-chapter-content" target="_blank"
+                               title="<%=discipline.chaptitle %>"><%=discipline.chaptitle %></a></li>
+                        <% }) %>
+
+                    </ol>
+                </div>
+                <div class="self-discipline-subbodybr">
+                    <h2>
+                        <ul>
+                            <li class="nowb">风险提示函</li>
+                        </ul>
+                    </h2>
+                    <ol>
+                        <% riskdiscipline.forEach(function (discipline) { %>
+                        <li><a href="/self-discipline/<%= discipline._id %>/selfdiscipline-risk-content" target="_blank"
+                               title="<%=discipline.risktitle %>"><%=discipline.risktitle %></a></li>
+                        <% }) %>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="admin-subbody">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">自律规范</h3>
+        </div>
+        <div class="panel-body">
+            <form id="defaultform" role="form" method="post" enctype="application/json" action="/admin/admin-selfdiscipline/<%= selfdiscipline._id %>/proupdate">
+                <div class="form-group">
+                    <label>自律规范名</label>
+                    <input class="form-control" placeholder="请输入通知或公告名" type="text" name="disctitle"
+                           value=<%= selfdiscipline.disctitle %>>
+                </div>
+
+                <div class="form-group">
+                    <label>自律规范内容</label>
+
+                    <textarea id="container"  class="admin-modal-container" name="discbio"
+                              type="text/plain"> <%- selfdiscipline.discbio %></textarea>
+                </div>
+                <input type="submit" class="btn  btn-primary" value="修改">
+            </form>
+        </div>
+        <!--<script type="text/javascript" src="../public/javascripts/update.js">-->
+        <script type="text/javascript">
+            var ue = UE.getEditor('container');
+        </script>
+    </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,33 @@
+<div class="admin-subbody">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">自律规范</h3>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped bs-events-table">
+                    <thead>
+                    <tr>
+                        <th>倡议书</th>
+                        <th>功能</th>
+                    </tr>
+                    </thead>
+                    <% proposaldiscipline.forEach(function (discipline) { %>
+                    <tbody>
+                    <tr>
+                        <td><%= discipline.disctitle %></td>
+                        <td>
+                            <div class="item">
+                                <a href="/admin/<%=discipline._id %>/discremove"><span class="glyphicon glyphicon-trash" style="color:red" /> </a>
+                                <a href="/admin/admin-selfdiscipline/<%= discipline._id %>/admin-selfdiscipline-proup" ><span class="glyphicon glyphicon-pencil"/> </a>
+                                <a href="/admin/admin-selfdiscipline/admin-selfdiscipline-proposal" ><span class="glyphicon glyphicon-plus"/> </a>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <% }) %>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<head>
+    <title>自律规范</title>
+    <%- include('../header/header') %>
+    <link rel="stylesheet" href="/stylesheets/self-discipline/self-discipline.css"/>
+    <link rel="stylesheet" href="/stylesheets/self-discipline/selfdiscipline-chapter-content.css"/>
+    <script type="text/javascript" src="/javascripts/webjs/self-discipline/self-discipline.js"></script>
+
+</head>
+<body class="selfdiscipline-body">
+<%- include('../../home/headercontent/public-header-nav') %>
+<%- include('../../home/nav/public-nav') %>
+
+<div class="selfdiscipline-chapter-content">
+    <h2>
+        <center><strong><%= cdiscipline.chaptitle %></strong></center>
+    </h2>
+    <hr class="selfdiscipline-chapter-line"/>
+    <div><%- cdiscipline.chapbio %></div>
+</div>
+
+<%- include('../../home/footer/public-footer') %>
+</body>
+</html>

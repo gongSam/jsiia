@@ -1,0 +1,28 @@
+<div class="admin-subbody">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">欢迎来到管理控制台--紧急通知</h3>
+        </div>
+        <div class="panel-body">
+            <div class="members-subbodybr">
+                <div class=" col-md-7 col-sm-7 col-xs-7 ">
+                    <h2>
+                        <strong>紧急通知</strong>
+                    </h2>
+                    <ol>
+                        <% allmnotice.forEach(function (notice) { %>
+                        <li><span><font><%= notice.nday %></font>/<%= notice.nmonth %>/<%= notice.nmonth %></span>
+                            <a href="/members/<%= notice._id %>/members-emergency-content" target="_blank"
+                               title="<%= notice.ntitle %>"><%= notice.ntitle %></a></li>
+                        <% }) %>
+                    </ol>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-5 ">
+                    <img class="img-responsive" src="../images/members-subbody/members-emergency-img.png"/>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

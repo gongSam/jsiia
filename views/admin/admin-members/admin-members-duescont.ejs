@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>会员会费</title>
+    <%- include('../../admin/header/header') %>
+    <link rel="stylesheet" href="/stylesheets/admin/admin-members.css"/>
+    <script type="text/javascript" src="/javascripts/webjs/admin/admin-members.js"></script>
+</head>
+<% if (user.membersname=="admin3") { %>
+<body class="body">
+<div class="admin-header"><%- include('../../admin/admin-head-sidebar/admin-header') %></div>
+<div class="admin-wrapper">
+    <div class="admin-sider"><%- include('../../admin/admin-head-sidebar/admin-siderbar') %></div>
+    <div class="admin-body"><%- include('../../admin/admin-right-side/admin-members/admin-members-duescontent') %></div>
+</div>
+<script>
+    $("#nav5").toggleClass("active");
+</script>
+</body>
+<% } else { %>
+<% } %>
+</html>

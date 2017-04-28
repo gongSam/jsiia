@@ -1,0 +1,37 @@
+<div class="admin-subbody">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">紧急通知</h3>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped bs-events-table">
+                    <thead>
+                    <tr>
+                        <th>单位名称</th>
+                        <th>文件名</th>
+                        <th>文件</th>
+                        <th>下载</th>
+                    </tr>
+                    </thead>
+                    <% allupdates.forEach(function (updates) { %>
+                    <tbody>
+                    <tr>
+                        <td><%= updates.upcompanytitle%></td>
+                        <td><%= updates.upfiletitle %></td>
+                        <td><a href="../../uploadfiles/<%= updates.upfile %>"
+                                                      title=<%= updates.upfiletitle %>> <%= updates.upfiletitle %></a></td>
+                        <td>
+                            <div class="item">
+                                <a href="/admin/<%= updates._id %>/updateremove"><span class="glyphicon glyphicon-trash" style="color:red" /></a>
+                                <a href="../../uploadfiles/<%= updates.upfile %>"><span class="glyphicon glyphicon-save"/> </a>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <% }) %>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

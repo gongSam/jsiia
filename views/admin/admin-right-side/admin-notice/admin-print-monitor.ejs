@@ -1,0 +1,41 @@
+<div class="admin-subbody">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">会员动态</h3>
+        </div>
+        <div class="panel-body">
+            <form id="defaultform" role="form" method="post" enctype="application/json">
+                <div class="form-group">
+                    <label>会员动态名</label>
+                    <input class="form-control" placeholder="请输入会员动态名" type="text" name="monititle">
+                </div>
+
+                <div class="form-group">
+                    <label>月份</label>
+                    <input class="form-control" placeholder="请输入月份" type="text" name="monimonth">
+                </div>
+
+                <div class="form-group">
+                    <label>天数</label>
+                    <input class="form-control" placeholder="请输入天数" type="text" name="moniday">
+                </div>
+
+                <div class="form-group">
+                    <label>会员动态内容</label>
+
+                    <script id="container" name="monibio" type="text/plain"></script>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <input type="submit" class="btn  btn-primary" value="添加">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    //CKEDITOR.replace('asscibio')
+    var ue = UE.getEditor('container');
+</script>

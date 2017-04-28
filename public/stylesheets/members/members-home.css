@@ -1,0 +1,41 @@
+.members-home-background{
+    background:url(../../images/members-subbody/members-entry-background.jpg) no-repeat;
+    background-size:100% 100%;
+    height:500px;
+}
+
+.members-home-nav{
+    width:75%;
+    position: inherit;
+    margin-top:85px;
+}
+
+.form-control{
+    width: 85%;
+}
+
+.col-md-7.col-sm-7.col-xs-7.size {
+    margin:40px;
+    border: 1px solid lightblue;
+    height: 350px;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+
+    50% {
+        opacity: 0.5; /*中间状态 透明度为0*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+#membershome
+{-webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 2s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+

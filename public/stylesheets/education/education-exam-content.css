@@ -1,0 +1,11 @@
+.education-exam-content {
+    padding: 40px 250px;
+}
+
+.education-exam-content h2{
+    color: #e74c3c;
+}
+
+hr.education-exam-line {
+    border-top: 1px solid #e74c3c;;
+}

@@ -1,0 +1,23 @@
+.members-subbodybr h2 {
+    margin-left: 35px;
+    width:500px;
+    height: 42px;
+    border-bottom: 1px solid #e0d7d2;
+    margin-bottom: 10px;
+}
+
+.members-subbodybr ol li a {
+    color: #333333;
+    font-size: 17px;
+    font-family: "微软雅黑";
+}
+
+.members-subbodybr ol li span font {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.members-subbodybr ol li {
+    border-bottom: 1px dashed;
+}
+

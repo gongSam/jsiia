@@ -1,0 +1,30 @@
+/*-------------admin---------*/
+
+a {
+    color: #428bca;
+    text-decoration: none;
+}
+
+.admin-sider {
+    width: 20%;
+    float: left;
+}
+
+.admin-body {
+    width: 80%;
+    float: left;
+}
+
+/*------admin-subbody--------*/
+
+.panel-body.admin-background-pic{
+    background-image: url(../../images/admin/admin-background-pic.png);
+    background-size:100% 100%;
+    padding: 31px 52px 32px 611px;
+}
+
+a.col-md-4.col-sm-4.col-xs-4.btn.size.btn-info {
+    padding: 33px 12px;
+    border-radius: 0px;
+}
+

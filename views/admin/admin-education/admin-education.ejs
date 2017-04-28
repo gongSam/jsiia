@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>考试培训</title>
+    <%- include('../../admin/header/header') %>
+    <link rel="stylesheet" href="/stylesheets/admin/admin-dynamics.css"/>
+
+</head>
+<% if (user.membersname=="admin3") { %>
+<body class="body">
+<div class="admin-header"><%- include('../../admin/admin-head-sidebar/admin-header') %></div>
+<div class="admin-wrapper">
+    <div class="admin-sider"><%- include('../../admin/admin-head-sidebar/admin-siderbar') %></div>
+    <div class="admin-body"><%- include('../../admin/admin-right-side/admin-right-education') %></div>
+</div>
+<script>
+    $("#nav8").toggleClass("active");
+</script>
+</body>
+<% } else { %>
+<% } %>
+</html>

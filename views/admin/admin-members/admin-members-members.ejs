@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>会员管理</title>
+    <%- include('../../admin/header/header') %>
+    <link rel="stylesheet" href="/stylesheets/admin/admin-members.css"/>
+    <link rel="stylesheet" href="/stylesheets/bootstrapValidator.min.css"/>
+    <script type="text/javascript" src="/javascripts/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="/javascripts/webjs/admin/admin-members.js"></script>
+
+</head>
+<body class="body">
+<% if (user.membersname=="admin3") { %>
+<div class="admin-header"><%- include('../../admin/admin-head-sidebar/admin-header') %></div>
+<div class="admin-wrapper">
+    <div class="admin-sider"><%- include('../../admin/admin-head-sidebar/admin-siderbar') %></div>
+    <div class="admin-body"><%- include('../../admin/admin-right-side/admin-members/admin-members-members') %></div>
+</div>
+<script>
+    $("#nav5").toggleClass("active");
+</script>
+</body>
+<% } else { %>
+<% } %>
+</html>

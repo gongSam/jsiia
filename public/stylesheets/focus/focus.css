@@ -1,0 +1,268 @@
+body.focus-body {
+    min-width: 960px;
+}
+
+.navbar-header {
+    width: auto;
+    height: 80px;
+    position: relative;
+    z-index: 20;
+}
+
+a.navbar-brand.position {
+    padding: 0;
+    padding-left: 50px;
+}
+/*------------focus-header-------*/
+.focus-header{
+    margin-bottom:45px;
+}
+/*------------focus-nav----------*/
+
+nav.navbar.navbar-background {
+    background-color: #337ab7;
+    font-family: "Microsoft YaHei" ! important;
+    font-size: 18px;
+    width: auto;
+    height: 44px;
+    position: relative;
+    z-index: 20;
+    overflow: visible;
+    border-bottom: 5px solid #0163b8;
+    border-top: 1px solid #0163b8;
+}
+
+
+.navbar-header.focus-nav {
+    height: 50px;
+}
+
+a.dropdown-toggle.style{
+    height: 50px;
+    display: block;
+    color: #fff;
+}
+
+a.active-style {
+    height: 50px;
+    display: block;
+    color: #fff;
+}
+
+ul.nav.position {
+    clear: both;
+    display: table;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar .nav > li > a:hover {
+    color:blue;
+    background-color: lightblue;
+}
+/*-----------focus-subbody-------*/
+
+.focus-subbody {
+    background-color:#f8f8f8;
+    height: 625px;
+}
+
+.focus-subbody-nav{
+    float:left;
+    width:25%;;
+    position: inherit;
+}
+
+ul.nav.nav-pills.nav-stacked.nav-style {
+    font-size: 18px;
+    text-align: center;
+}
+
+.nav > li > a.focus-nav-font{
+    color:black;
+    font-family: "Microsoft YaHei" ;
+}
+
+.nav-stacked > li {
+    margin-top: 45px;
+}
+
+.nav > li.focus-nav-li{
+    border: 1px solid #cdc9c9;
+    -webkit-box-shadow:0 0 10px 1px #ccc;
+    -moz-box-shadow:0 0 10px 1px #ccc;
+    box-shadow:0 0 10px 1px #ccc;
+}
+
+.nav > li > img.focus-nav-pic{
+    border: 1px solid #cdc9c9;
+    -webkit-box-shadow:0 0 10px 1px #ccc;
+    -moz-box-shadow:0 0 10px 1px #ccc;
+    box-shadow:0 0 10px 1px #ccc;
+}
+
+.focus-subbody-content{
+    border-right: 1px dashed;
+    float: left;
+    width:73%;
+    height:620px;
+}
+
+/*.panel.panel-border.panel-primary {
+    border: 1px solid #cdc9c9;
+    -webkit-box-shadow: 0 0 10px 1px #ccc;
+    -moz-box-shadow: 0 0 10px 1px #ccc;
+    box-shadow: 0 0 10px 1px #ccc;
+}*/
+
+img.focus-nav-pic.img-responsive {
+    margin-left: 15px;
+    margin-bottom: 30px
+}
+
+
+
+img.focus-panel-pic{
+    padding: 60px;
+}
+p.focus-panel-p{
+    line-height: 3;
+    padding: 0 40px;
+}
+
+.breadcrumb.breadcrumb-style {
+    font-family: microsoft yahei;
+    background: #428bca;
+    padding-left: 60px;
+}
+
+/*------------footer--------------*/
+
+.focus-footer {
+    background-color:#f2fafc;
+}
+
+.focus-footer-fonter{
+    font-family:"Microsoft YaHei"
+}
+
+img.footerlogo {
+    margin-top: 10px;
+    width: 222px;
+}
+
+.row.focus-row {
+    margin: 20px;
+}
+
+img.footerqr {
+    margin: 6px;
+    width: 45%;
+    float: left;
+}
+
+img.focus-footer-linklogo {
+    margin-top: 7px;
+}
+/*------focus-right-body----------*/
+
+.focus-subbodybr {
+    width: 82%;
+    margin: 45px auto 45px auto;
+}
+
+.focus-subbodybr h2 {
+    color: #337ab7;
+    width: 530px;
+    height: 42px;
+    border-bottom: 1px solid #e0d7d2;
+    margin-bottom: 10px;
+}
+
+.focus-subbodybr h2 ul {
+    float: left;
+    width: 170px;
+}
+
+.focus-subbodybr h2 a {
+    float: right;
+    display: block;
+    width: 6px;
+    height: 12px;
+    margin-top: 14px;
+    padding-right: 5px;
+}
+
+.focus-subbodybr ol {
+    padding-left:0px;
+}
+.focus-subbodybr ol li {
+    display: block;
+    line-height: 27px;
+}
+
+.focus-subbodybr ol li a {
+    color: #333333;
+    font-size: 18px;
+    font-family: "微软雅黑";
+}
+
+.focus-subbodybr ol li a:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.focus-subbodybr ol li span {
+    color: #c1c5d3;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-right: 14px;
+}
+
+.focus-subbodybr ol li span font {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.col-md-7.col-sm-7.col-xs-7 {
+    border-bottom: 1px dashed;
+}
+.col-md-5.col-sm-5.col-xs-5 {
+    border-bottom: 1px dashed;
+}
+/*------------footer--------------*/
+
+.public-footer {
+    background: url(../../images/footer/footer-background.jpg) no-repeat;
+    background-size: 100% 92%;
+}
+
+.public-footer-fonter{
+    font-family:"Microsoft YaHei"
+}
+img.footerlogo.img-responsive {
+    padding-top: 30px;
+    margin-left: -50px;
+}
+
+.row.public-row {
+    margin: 20px;
+}
+
+img.footerqr {
+    margin: 3px;
+    width: 85%;
+}
+
+img.public-footer-linklogo {
+    margin-top: 7px;
+
+}
+img.public-footer-linkmember{
+    overflow: hidden;
+    width:100px;
+    height:33px;
+    margin-top:3px;
+}

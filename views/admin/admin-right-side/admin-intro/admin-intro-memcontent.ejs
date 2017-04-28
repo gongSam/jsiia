@@ -1,0 +1,33 @@
+<div class="admin-subbody">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">专业委员会</h3>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped bs-events-table">
+                    <thead>
+                    <tr>
+                        <th>单位</th>
+                        <th>功能</th>
+                    </tr>
+                    </thead>
+                    <% member1prefessional.forEach(function (memintro) { %>
+                    <tbody>
+                    <tr>
+                        <td><%= memintro.memptitle %></td>
+                        <td>
+                            <div class="item">
+                                <a href="/admin/<%= memintro._id %>/remove"><span class="glyphicon glyphicon-trash"/> </a>
+                                <a href="/admin/admin-intro/<%= memintro._id %>/admin-intro-memup" ><span class="glyphicon glyphicon-pencil"/> </a>
+                                <a href="/admin/admin-intro/admin-intro-members" ><span class="glyphicon glyphicon-plus"/> </a>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <% }) %>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

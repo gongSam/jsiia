@@ -1,0 +1,413 @@
+"AWT-EventQueue-0 2016.3.5#WS-163.15188.8 WebStorm, eap:false, os:Windows 10 10.0, java-version:JetBrains s.r.o 1.8.0_112-release-408-b6" prio=0 tid=0x0 nid=0x0 runnable
+     java.lang.Thread.State: RUNNABLE
+ (in native)
+	at sun.nio.fs.WindowsNativeDispatcher.GetFileAttributesEx0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.GetFileAttributesEx(WindowsNativeDispatcher.java:380)
+	at sun.nio.fs.WindowsFileAttributes.get(WindowsFileAttributes.java:309)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:51)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at com.intellij.configurationStore.FileBasedStorage.loadLocalData(FileBasedStorage.kt:119)
+	at com.intellij.configurationStore.XmlElementStorage.loadData(XmlElementStorage.kt:63)
+	at com.intellij.configurationStore.XmlElementStorage.loadData(XmlElementStorage.kt:32)
+	at com.intellij.configurationStore.StateStorageBase.getStorageData(StateStorageBase.kt:60)
+	at com.intellij.configurationStore.StateStorageBase.getState(StateStorageBase.kt:39)
+	at com.intellij.configurationStore.StateStorageBase.getState(StateStorageBase.kt:35)
+	at com.intellij.configurationStore.ComponentStoreImpl.a(ComponentStoreImpl.kt:308)
+	at com.intellij.configurationStore.ComponentStoreImpl.initComponent(ComponentStoreImpl.kt:91)
+	at com.intellij.openapi.components.impl.PlatformComponentManagerImpl.initializeComponent(PlatformComponentManagerImpl.java:54)
+	at com.intellij.openapi.components.impl.ServiceManagerImpl$MyComponentAdapter.getComponentInstance(ServiceManagerImpl.java:233)
+	at com.intellij.util.pico.DefaultPicoContainer.getLocalInstance(DefaultPicoContainer.java:238)
+	at com.intellij.util.pico.DefaultPicoContainer.getComponentInstance(DefaultPicoContainer.java:205)
+	at com.intellij.openapi.components.ServiceManager.doGetService(ServiceManager.java:49)
+	at com.intellij.openapi.components.ServiceManager.getService(ServiceManager.java:39)
+	at com.intellij.openapi.util.DimensionService.getInstance(DimensionService.java:67)
+	at com.intellij.openapi.wm.impl.welcomeScreen.FlatWelcomeFrame.<init>(FlatWelcomeFrame.java:117)
+	at com.intellij.openapi.wm.impl.welcomeScreen.FlatWelcomeFrameProvider.createFrame(FlatWelcomeFrameProvider.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.showNow(WelcomeFrame.java:157)
+	at com.intellij.idea.IdeaApplication$IdeStarter.main(IdeaApplication.java:324)
+	at com.intellij.idea.IdeaApplication.a(IdeaApplication.java:193)
+	at com.intellij.idea.IdeaApplication$$Lambda$102/669437.run(Unknown Source)
+	at com.intellij.openapi.application.TransactionGuardImpl.performUserActivity(TransactionGuardImpl.java:204)
+	at com.intellij.idea.IdeaApplication.run(IdeaApplication.java:193)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.idea.MainImpl$1$1.a(MainImpl.java:68)
+	at com.intellij.idea.MainImpl$1$1$$Lambda$36/30801192.run(Unknown Source)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:363)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+"ApplicationImpl pooled thread 4" prio=0 tid=0x0 nid=0x0 runnable
+     java.lang.Thread.State: RUNNABLE
+
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:454)
+	at com.intellij.diagnostic.ThreadDumper.dumpThreadsToFile(ThreadDumper.java:74)
+	at com.intellij.diagnostic.ThreadDumper.getThreadDumpInfo(ThreadDumper.java:64)
+	at com.intellij.diagnostic.PerformanceWatcher.dumpThreads(PerformanceWatcher.java:273)
+	at com.intellij.diagnostic.PerformanceWatcher.a(PerformanceWatcher.java:230)
+	at com.intellij.diagnostic.PerformanceWatcher.a(PerformanceWatcher.java:210)
+	at com.intellij.diagnostic.PerformanceWatcher.access$000(PerformanceWatcher.java:58)
+	at com.intellij.diagnostic.PerformanceWatcher$1.run(PerformanceWatcher.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at com.intellij.util.concurrency.SchedulingWrapper$MyScheduledFutureTask.run(SchedulingWrapper.java:239)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+"ApplicationImpl pooled thread 3" prio=0 tid=0x0 nid=0x0 runnable
+     java.lang.Thread.State: RUNNABLE
+ (in native)
+	at java.util.WeakHashMap$KeySet.iterator(WeakHashMap.java:877)
+	at java.net.URLClassLoader.close(URLClassLoader.java:297)
+	at com.intellij.util.io.HttpRequests.process(HttpRequests.java:391)
+	at com.intellij.util.io.HttpRequests.access$100(HttpRequests.java:57)
+	at com.intellij.util.io.HttpRequests$RequestBuilderImpl.connect(HttpRequests.java:252)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.a(UpdateChecker.kt:176)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.a(UpdateChecker.kt:122)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.access$doUpdateAndShowResult(UpdateChecker.kt:65)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker$updateAndShowResult$1.run(UpdateChecker.kt:91)
+	at com.intellij.openapi.application.impl.ApplicationImpl$2.run(ApplicationImpl.java:309)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+"Netty Builtin Server 2" prio=0 tid=0x0 nid=0x0 runnable
+     java.lang.Thread.State: RUNNABLE
+ (in native)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:743)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:400)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873)
+	at java.lang.Thread.run(Thread.java:745)
+
+"ApplicationImpl pooled thread 2" prio=0 tid=0x0 nid=0x0 runnable
+     java.lang.Thread.State: RUNNABLE
+ (in native)
+	at java.util.zip.ZipFile.read(Native Method)
+	at java.util.zip.ZipFile.access$1400(ZipFile.java:60)
+	at java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:717)
+	at com.intellij.openapi.util.io.FileUtilRt.loadBytes(FileUtilRt.java:631)
+	at com.intellij.openapi.util.io.FileUtil.loadBytes(FileUtil.java:1619)
+	at com.intellij.util.lang.MemoryResource.load(MemoryResource.java:74)
+	at com.intellij.util.lang.JarLoader.getResource(JarLoader.java:134)
+	at com.intellij.util.lang.ClassPath$ResourceStringLoaderIterator.process(ClassPath.java:338)
+	at com.intellij.util.lang.ClassPath$ResourceStringLoaderIterator.process(ClassPath.java:328)
+	at com.intellij.util.lang.ClasspathCache.iterateLoaders(ClasspathCache.java:98)
+	at com.intellij.util.lang.ClassPath.getResource(ClassPath.java:106)
+	at com.intellij.util.lang.UrlClassLoader.findClass(UrlClassLoader.java:220)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at com.intellij.openapi.extensions.impl.ExtensionComponentAdapter.loadImplementationClass(ExtensionComponentAdapter.java:157)
+	at com.intellij.openapi.extensions.impl.ExtensionComponentAdapter.getComponentImplementation(ExtensionComponentAdapter.java:66)
+	at com.intellij.openapi.extensions.impl.ExtensionComponentAdapter.getComponentInstance(ExtensionComponentAdapter.java:73)
+	at com.intellij.openapi.extensions.impl.ExtensionComponentAdapter.getExtension(ExtensionComponentAdapter.java:119)
+	at com.intellij.openapi.extensions.impl.ExtensionPointImpl.processAdapters(ExtensionPointImpl.java:246)
+	at com.intellij.openapi.extensions.impl.ExtensionPointImpl.getExtensions(ExtensionPointImpl.java:191)
+	at com.intellij.openapi.extensions.Extensions.getExtensions(Extensions.java:102)
+	at com.intellij.openapi.extensions.Extensions.getExtensions(Extensions.java:89)
+	at com.intellij.util.xml.impl.DomApplicationComponent.<init>(DomApplicationComponent.java:99)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.picocontainer.defaults.InstantiatingComponentAdapter.newInstance(InstantiatingComponentAdapter.java:193)
+	at org.picocontainer.defaults.ConstructorInjectionComponentAdapter$1.run(ConstructorInjectionComponentAdapter.java:220)
+	at org.picocontainer.defaults.ThreadLocalCyclicDependencyGuard.observe(ThreadLocalCyclicDependencyGuard.java:53)
+	at org.picocontainer.defaults.ConstructorInjectionComponentAdapter.getComponentInstance(ConstructorInjectionComponentAdapter.java:248)
+	at com.intellij.util.pico.CachingConstructorInjectionComponentAdapter.getComponentInstance(CachingConstructorInjectionComponentAdapter.java:58)
+	at com.intellij.openapi.components.impl.ServiceManagerImpl$MyComponentAdapter.getComponentInstance(ServiceManagerImpl.java:228)
+	at com.intellij.util.pico.DefaultPicoContainer.getLocalInstance(DefaultPicoContainer.java:238)
+	at com.intellij.util.pico.DefaultPicoContainer.getComponentInstance(DefaultPicoContainer.java:205)
+	at com.intellij.openapi.components.ServiceManager.doGetService(ServiceManager.java:49)
+	at com.intellij.openapi.components.ServiceManager.getService(ServiceManager.java:39)
+	at com.intellij.util.xml.impl.DomApplicationComponent.getInstance(DomApplicationComponent.java:105)
+	at com.intellij.util.xml.stubs.builder.DomStubBuilder.getStubVersion(DomStubBuilder.java:96)
+	at com.intellij.psi.stubs.StubVersionMap.c(StubVersionMap.java:217)
+	at com.intellij.psi.stubs.StubVersionMap.a(StubVersionMap.java:202)
+	at com.intellij.psi.stubs.StubVersionMap.b(StubVersionMap.java:94)
+	at com.intellij.psi.stubs.StubVersionMap.<init>(StubVersionMap.java:64)
+	at com.intellij.psi.stubs.StubUpdatingIndex$MyIndex.<init>(StubUpdatingIndex.java:396)
+	at com.intellij.psi.stubs.StubUpdatingIndex.createIndexImplementation(StubUpdatingIndex.java:337)
+	at com.intellij.util.indexing.FileBasedIndexImpl.a(FileBasedIndexImpl.java:455)
+	at com.intellij.util.indexing.FileBasedIndexImpl.a(FileBasedIndexImpl.java:387)
+	at com.intellij.util.indexing.FileBasedIndexImpl.a(FileBasedIndexImpl.java:351)
+	at com.intellij.util.indexing.FileBasedIndexImpl.access$5300(FileBasedIndexImpl.java:102)
+	at com.intellij.util.indexing.FileBasedIndexImpl$FileIndexDataInitialization.a(FileBasedIndexImpl.java:2317)
+	at com.intellij.util.indexing.FileBasedIndexImpl$FileIndexDataInitialization$$Lambda$81/23611089.run(Unknown Source)
+	at com.intellij.util.indexing.IndexInfrastructure$DataInitialization.a(IndexInfrastructure.java:211)
+	at com.intellij.util.indexing.IndexInfrastructure$DataInitialization.a(IndexInfrastructure.java:201)
+	at com.intellij.util.indexing.IndexInfrastructure$DataInitialization.call(IndexInfrastructure.java:165)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$2.run(BoundedTaskExecutor.java:210)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+"ApplicationImpl pooled thread 1" prio=0 tid=0x0 nid=0x0 runnable
+     java.lang.Thread.State: RUNNABLE
+ (in native)
+	at java.util.zip.ZipFile.read(Native Method)
+	at java.util.zip.ZipFile.access$1400(ZipFile.java:60)
+	at java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:717)
+	at com.intellij.openapi.util.io.FileUtilRt.loadBytes(FileUtilRt.java:631)
+	at com.intellij.openapi.util.io.FileUtil.loadBytes(FileUtil.java:1619)
+	at com.intellij.util.lang.MemoryResource.load(MemoryResource.java:74)
+	at com.intellij.util.lang.JarLoader.getResource(JarLoader.java:134)
+	at com.intellij.util.lang.ClassPath$ResourceStringLoaderIterator.process(ClassPath.java:338)
+	at com.intellij.util.lang.ClassPath$ResourceStringLoaderIterator.process(ClassPath.java:328)
+	at com.intellij.util.lang.ClasspathCache.iterateLoaders(ClasspathCache.java:98)
+	at com.intellij.util.lang.ClassPath.getResource(ClassPath.java:106)
+	at com.intellij.util.lang.UrlClassLoader._findClass(UrlClassLoader.java:235)
+	at com.intellij.ide.plugins.cl.PluginClassLoader.a(PluginClassLoader.java:125)
+	at com.intellij.ide.plugins.cl.PluginClassLoader.a(PluginClassLoader.java:74)
+	at com.intellij.ide.plugins.cl.PluginClassLoader.loadClass(PluginClassLoader.java:63)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.convertStub(ActionManagerImpl.java:150)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.a(ActionManagerImpl.java:486)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.getAction(ActionManagerImpl.java:475)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.preloadActions(ActionManagerImpl.java:1252)
+	at com.intellij.openapi.actionSystem.impl.ActionPreloader.preload(ActionPreloader.java:32)
+	at com.intellij.openapi.application.Preloader.a(Preloader.java:74)
+	at com.intellij.openapi.application.Preloader$$Lambda$62/3378646.run(Unknown Source)
+	at com.intellij.openapi.progress.impl.CoreProgressManager$3.run(CoreProgressManager.java:179)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.a(CoreProgressManager.java:568)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:519)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:54)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:164)
+	at com.intellij.openapi.application.Preloader.a(Preloader.java:72)
+	at com.intellij.openapi.application.Preloader$$Lambda$61/7363449.run(Unknown Source)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$2.run(BoundedTaskExecutor.java:210)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+"BaseDataReader: error stream of fsnotifier.exe" prio=0 tid=0x0 nid=0x0 runnable
+     java.lang.Thread.State: RUNNABLE
+ (in native)
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.Reader.read(Reader.java:140)
+	at com.intellij.util.io.BaseOutputReader.readAvailableBlocking(BaseOutputReader.java:137)
+	at com.intellij.util.io.BaseDataReader.readAvailable(BaseDataReader.java:82)
+	at com.intellij.util.io.BaseDataReader.doRun(BaseDataReader.java:160)
+	at com.intellij.util.io.BaseDataReader$1.run(BaseDataReader.java:61)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+"BaseDataReader: output stream of fsnotifier.exe" prio=0 tid=0x0 nid=0x0 runnable
+     java.lang.Thread.State: RUNNABLE
+ (in native)
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.Reader.read(Reader.java:140)
+	at com.intellij.util.io.BaseOutputReader.readAvailableBlocking(BaseOutputReader.java:137)
+	at com.intellij.util.io.BaseDataReader.readAvailable(BaseDataReader.java:82)
+	at com.intellij.util.io.BaseDataReader.doRun(BaseDataReader.java:160)
+	at com.intellij.util.io.BaseDataReader$1.run(BaseDataReader.java:61)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+"ProcessWaitFor: fsnotifier.exe" prio=0 tid=0x0 nid=0x0 runnable
+     java.lang.Thread.State: RUNNABLE
+ (in native)
+	at java.lang.ProcessImpl.waitForInterruptibly(Native Method)
+	at java.lang.ProcessImpl.waitFor(ProcessImpl.java:449)
+	at com.intellij.execution.process.ProcessWaitFor$1.run(ProcessWaitFor.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+"Netty Builtin Server 1" prio=0 tid=0x0 nid=0x0 runnable
+     java.lang.Thread.State: RUNNABLE
+ (in native)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:743)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:400)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873)
+	at java.lang.Thread.run(Thread.java:745)
+
+"AWT-Windows" prio=0 tid=0x0 nid=0x0 runnable
+     java.lang.Thread.State: RUNNABLE
+ (in native)
+	at sun.awt.windows.WToolkit.eventLoop(Native Method)
+	at sun.awt.windows.WToolkit.run(WToolkit.java:306)
+	at java.lang.Thread.run(Thread.java:745)
+
+"Attach Listener" prio=0 tid=0x0 nid=0x0 runnable
+     java.lang.Thread.State: RUNNABLE
+
+
+"Signal Dispatcher" prio=0 tid=0x0 nid=0x0 runnable
+     java.lang.Thread.State: RUNNABLE
+
+
+"main" prio=0 tid=0x0 nid=0x0 runnable
+     java.lang.Thread.State: RUNNABLE
+
+
+"Keep-Alive-Timer" prio=0 tid=0x0 nid=0x0 waiting on condition
+     java.lang.Thread.State: TIMED_WAITING
+
+	at java.lang.Thread.sleep(Native Method)
+	at sun.net.www.http.KeepAliveCache.run(KeepAliveCache.java:172)
+	at java.lang.Thread.run(Thread.java:745)
+
+"TimerQueue" prio=0 tid=0x0 nid=0x0 waiting on condition
+     java.lang.Thread.State: WAITING
+ on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@c4900
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.DelayQueue.take(DelayQueue.java:211)
+	at javax.swing.TimerQueue.run(TimerQueue.java:174)
+	at java.lang.Thread.run(Thread.java:745)
+
+"Image Fetcher 0" prio=0 tid=0x0 nid=0x0 waiting on condition
+     java.lang.Thread.State: TIMED_WAITING
+ on java.util.Vector@1f85fc6
+	at java.lang.Object.wait(Native Method)
+	at sun.awt.image.ImageFetcher.nextImage(ImageFetcher.java:147)
+	at sun.awt.image.ImageFetcher.fetchloop(ImageFetcher.java:200)
+	at sun.awt.image.ImageFetcher.run(ImageFetcher.java:169)
+
+"AWT-Shutdown" prio=0 tid=0x0 nid=0x0 waiting on condition
+     java.lang.Thread.State: WAITING
+ on java.lang.Object@1b145d3
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at sun.awt.AWTAutoShutdown.run(AWTAutoShutdown.java:295)
+	at java.lang.Thread.run(Thread.java:745)
+
+"Periodic tasks thread" prio=0 tid=0x0 nid=0x0 waiting on condition
+     java.lang.Thread.State: TIMED_WAITING
+ on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1c66717
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.DelayQueue.take(DelayQueue.java:223)
+	at com.intellij.util.concurrency.AppDelayQueue$1.run(AppDelayQueue.java:42)
+	at java.lang.Thread.run(Thread.java:745)
+
+"Java2D Disposer" prio=0 tid=0x0 nid=0x0 waiting on condition
+     java.lang.Thread.State: WAITING
+ on java.lang.ref.ReferenceQueue$Lock@1ca6ca6
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at sun.java2d.Disposer.run(Disposer.java:148)
+	at java.lang.Thread.run(Thread.java:745)
+
+"Finalizer" prio=0 tid=0x0 nid=0x0 waiting on condition
+     java.lang.Thread.State: WAITING
+ on java.lang.ref.ReferenceQueue$Lock@670af6
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+"Reference Handler" prio=0 tid=0x0 nid=0x0 waiting on condition
+     java.lang.Thread.State: WAITING
+ on java.lang.ref.Reference$Lock@1615274
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ÿØÿà JFIF  ` `  ÿÛ C ÿÛ CÿÀ  È" ÿÄ            	
+ÿÄ A     !1	AQ"‘#2aq
+$RÁğB¡±%3’ÑáCScrñÿÄ           	
+ÿÄ ;     !1A"Qaq2‘±#¡Áğ$3BCRÑ4SáÿÚ   ? ßãÆ)Lc¥1Œb”Æ1ŠSÆ)Lc¥1Œb”Æ1ŠSÆ)Lc¥1Œb”Æ1ŠSÆ)Lc¥1Œb”Æ1ŠSÆ)Lc¥1Œb”Æ1ŠSÆ)Lc¥1Œb”Æ1ŠSÆ)Lc¥1Œb”Æ3ÏØQ7iÇ
+ˆò  ‘äŠW<dyÛ½XtÛ Ù¸y¹÷­Ö€ØÇil»ÀÇËœ8ä¼Î)6íOÿ hõT0ğ Qä3»{ûBRÌö?U2ÚıCË '"×Ô·ú²ê Mkº©@@Æä¾³X—¡À»9íÉ@³]®­öé“QÀLxî8Iãş©Ç‘çÖ>]ÖÛ%S'EUæÓüŠ«<Ãàyûûù öş¿éÆ|Er‡<wráGêûˆ yÍ76çö†ú·º¶z[Jj=-¹“9»ì¬®Ïµ·/ü¦,F¶‹€/dWbõ"¢/œÅæàë«­}óó¨íŞ¬öÌœ;Ãrâ©D“o¬*"^D
+ÃRÑĞ Ã|Úª˜ m+B:‰zØ£jû¹•‘üIêôùlå}±>µ\ŞzÉ¢mHûÄLu<lŠ‚èQÏ…=†+úµØÔGÖeéLîU7—¬"ê¦ÒÍæÌİ‚g*j>^§–Išg9wJ4*1Š9DsÚˆsàsù¨t…¸âºiê¯Bï(¯Wæª[R·ûQ"âMê²Õ+;¿Ùks9w‹º]VËCO;t·ª)Õ5Pô“ãú !Ôó PÉº¨¾í!ÌOUœÃ5€Å(ˆå#‚·(÷” å 8‡ìÃë>•j]#tM±Mıà±§Öì4îGñ)÷ÎNßˆÅIô.¯‡®í¯Ü­8”G’¨ëBñ¼¤ªWã,4gQ:õáŠGÎ%!Œq )¤#•2ˆñÀ¹cói  ˆrsv¿ó.Ô5Ä‡ÌÁKGK#Çñ°xİÏhğ#Â„Lâ¢#ãÕS òPã+ù6ùĞÿ ù1$3Î2ãK?ØÆ?åS54âT…ñ#1çó®ÿ @ÿ —Ÿı²¹â?±ùë¦1Œæ”Æ1ŠSÆ)Lc¥1Œb”Æ1ŠSÆ)Lc¥1Œb”Æ1ŠSÆ)Lc¥xò9>$l®ò]õRÓ]Øå*Vôô½ºFrEh©tÕ„h’ñ›7mÍCÇHÃ¢³C‘ÈîÖæõ…1	« õ»Î»X­Úµn£‡¨`*h¢‘Lu9„@ 
+RˆòöóÆc¿jìvk·Œ¿dWLI§„ŞG»DÍ]¹xQ *åšË‚Hœ8LŠ€pó’=3b—{„°‘èÆZâÆP•%[~
++Æ6ŒñŸÏ±0šÌ„4v	`¹ÿ R¤ùóÅhÓTÈ¡#5d™~Şme œÇÊÈCºº¯$ƒõƒñi9I)	˜!ã*WeMï/ÊeZ¡ŞäH”H¿…æÓwÎã`Şº2§«'Z–zŸ}EÍ¶ÌÊÓHx²_‚ZØEBÀ•„SIfî™,“	™¶î˜:vX·€‹ÔTM<õGº#rm==& ã\lmIÇ”»£a¦İ¥¸H¬9£ÜáàÉ.‘Š<ˆˆfàÛñ®ËÉÇt¼îN«pvû	æzXÙI™°kmÄà*+Å1ãW­ÛŞ½RZ§<İıi+â!+ê:Ô¡»š–íu²h›UïD‹l"ÔfşòŒÔ&éNÖÛSÈ^À½í”(‘Ø…g’ :9o³;+XŞ­:­Û„Ä{síÂ[’V
+ÊR{lRTG=¼Tí®|#4|0>[eïí½lV¼kíléTZÕ¤5R!	+[âÙ^İo”B¾zÂ´ÚáQ¬O0ZÓ"Ú¹Hïå=b]t—\\”ÆÚÌ½Šr¿;”¥ïoX.Sñ3Œ«.Ö±ÀsºµÕ\¦ØdªU·V{Y“·½¼q¤#$áäŒ½oMÓUP’[›©›ôÄ<3Q—§¥cÛ€¿ãÕÛC¨è8(¯ŞÜ¶>ëQtŒÎÎ´Jë¨•)[i;i?ON5ãtq©{ø¤iÛƒ™ıtËÕ[Îâg‹)_·§ª–Ó}:®JËW.)’ûjÀÖD%&áîrR;*×}¬ÅiÇ7Ë+¦o,Š¤Í©5 Ş¼×w‹ƒk“z¹©¤º‡[tEaIÜ¤’„¶“x¨r	U®tš‰ú6˜iuM©<¤8 v§róÄ	9>YÖj[g&dª¯MêŠ"ÙSx'¤¹ 2¦à÷¨¸)ÏŸlßë£Í¸÷ék@íp]7.­Úº¬¬¹ÈrœIaˆb4Œbˆò¡g"ªnî°óÇ€æ)f¹Ï+3/ó©“ÃJÊüó$D¾“g†rg­PáwòíVÄ\=
+ áÇo®}ã³o7²º‡èÂ÷H¦ŞêA7 6b­F¹Â:Q«êæÆ`¥†=û;4Cöòğé¸Ÿ‹²µD‹°•d‚ÉÁE#ÙıBÕ°‚¬÷Y)q ÇDY.¥;ˆVÄN2
+‡¾¢6ïğ´«¬'6û$¼<„ƒÊW‘ØgŸs¹ùV|~¼‡ä<{ĞCè?Lú7på›’=dáÃÉ	<b²­&>x8.ˆqP9÷SÔ/åãÎu.d¬Ì7ªl:»ê]¡Çª]ÂR•û"eV«ÙZ&‹YS eÏå¬tÚIÇåR(ª_Ü*àCÉ‹İÈ@Å÷áCÇ>xóàD28ÌË5Ú"S‘ŸàÀõvg'Î;÷íŸÊ¶o,¾€B’´c‘ƒÛÎ{p?<T‡¥õ=)2¹$­†$=2Yš ÌÉÉ	Ş»D€™!ŒÂÜ­ß˜ s•„¡2à¬6H¶“o›ÉÆ½Hjñ¢…Q%‰ä·%1Š¦ Dù!Mã1`Aö§GùñçíõóõÏ]BÙº®dÓ	™wµg‹[t ¢†Àc
+ö†åôåãˆapõ™¦I
+F »E3+ZêİÑrçdAnÅG(P eMÜƒã¾k2Ü^³	Û´èïÇçõÇlÖNñ\T›)vlä£œ¤ñ„ƒD³vİBªİÃW	‘TEB”éª™ÀÉ˜<9öí2 ƒ…àƒÜ"°DpiŒc8®)Œc¦1ŒR˜Æ1JcÅ)Œc¦1” ÷Å*¸Î=Áç<{ñŸ% ˆrª„L9àC‘0éê¼ÿ –pTsïãÚ•÷Æu£1òqüı¾u°ˆÿ @G?RN‘\rrªâLä9|‡>¦ôÎĞ{(Ì|¿ö?Zf¿F3wòéãŸÓp<ÿ ¿óÎr>#ÿ O+–q0ö”GìË>*ˆ€|xösà?¯Í*.õs3Flj,•RT€úPÌ0•Pp¨ê¸I.<óÆCÓy)€y7p»înïâaò!ıD\¥6iÛı™çp&ò*Eµ7%#
+Fb%D DÕ0€nãp"#à3et=©»e†1Û‡¤¡2<dïJT~ƒİøqRÈ¥¨éí¹i|v'×<V‹_Ú$Ö¯u‡[-¶b&B/xëêÍÄçM !`l­2Ê<€˜¦p£Šì{¥Ê§|Cœ€&îë]˜My³5ÖÂ™‚kr¡_)÷‡U	9711¶têV(û	 ¤$š$³–LdÕI³§M[ªéLs S	„£½OÇáû±:ÛÕZcO³€y²uU–q³˜™ë<9Ä­*àÚ=G†JÙ]°Š;ØIØfo”bíãe|ıVG;„ŠİÎ)¿—µôLu-ÔÆ“ÔÑå!TwùîËtJ²ŠQ©I8(@ñÙTLp? ¯hw}ÌÖ±¬ÌJ´ÈrCØRÒ†Û;›¯jŠğRTHÆ8Ç©K¥ÙsQIÇ³ :â]SƒÍşæJRAüûğj(ïN¼ô¢Õ-Y´ºMÔ:ÊÕFÏ›Üvş¬d&4Â;¢ÍzŸØÏfióúópo¼	f¯È/%,Ú’Ñ3)¨«ecÛMìn½ëÇ®æë¤Äµêsm¯³õÆÑs-á'3~©™µ¢?œ-wZI„D«Ó#ŠòĞ°È'è§Ë.z#°v¤øiô'^nEèÚkª^²e9[§$œE‚½¬"¨6é<sHŒ¤U…²Î OéJlçhŠ	@\ôĞ_[m£mÑ°uî†4„Š3Œİ,ú½­k•{}
+Ë!A¼[zÎ±qu¶Ø$¢*ÉŒ½Ëw©"£´ÖDÇE4²³“¨¦{æ,ª­Ì§ZZUI(B–‘µ*ÎÑƒßöÌFÓ2ˆni‰1è¬mmÙA…û8YÆÔˆ	'Q>8#§n˜øQõÇ¸búG_™Á.Dšá×ZÕ¾›€›ØNk:HİİİÑíŸåäSP9Í«ş
+š\~;ÖóÔfÛ =y·ª•Ô6®£Ù“—M	8	Ù	“NØlÒ!#Ö“I7£	Se<™Ò“YÄL›ryê¿
+héUÉ)Ô?S[“n>?¦£˜JjŒtÍ=c r³UT‚<íùÓpÉë^[(d€¢p)û€oÓ:'ÃÓ¢ä2X=«%Ú.{xÉÍ‚ó´;ËÍ’Î¼ååòç8 •4¨©Ì$°¡¹ê;á¤1*KÒN6³€–RR¼O~ÜŸ—Ò²v1p~ZSi·—¤½„¶ÜHïL­å#C)Q$ãÀ8ì;që¢7K¨ı!W³½×Ò*°¸ÌŠ)ÃÎ"¼;È&1ó
+ ÒøÙYÀ¥‹›t˜‡}‹yYfK
+Ğ­İ ¹_Wu§&Ùş£a`¹™®V¯ ‚níL©¤T\‰œQœ˜ÀSÅTT÷G.öZ£`£±ŞºâMo`HeãZÍ´Ò&
+a™ÖôT“I“FîRXS"iz©D—0DıŒÕ1\¦X¨˜rzŠ>¡'wä9€Â"Q)<÷”¼DœjOQµ6¨…{v™2fÎøÌD}Ä!LñµÕúg”R¬ı>5št?bËÍ¾É-¸ÓIq.¤€âÙå+BÁJFAÈ<ƒWJoğåQ]ËV^‘c‘!İ:@d½SA3¿íÏXLU>Å–TÜ(Nå9:"?iÊ&ªA9{L^àD†òSyöà <”~¹åì’×KmQíqëÅ!aåÌÆÆá*JnxÕ°/Ui˜¨(V“LåS·€•Ğç2‘Í¡cœ•<œ	ó
+B(!ÁDä ƒ¥&$"|ve¯öLûANê£Ô½8–‰7i˜‰}««®›qheqÔ¢N
+T£Áç‚9>Ešl;\9óµSË¨mZ3¥@óóíŞ¥J·AjòÉ©ŞA8tSµÒ»Œ"X“tv²°ÈŒ<¥\ŸMR¢ğHé6!ÛéNi®èÏïõúÿ ¿¾br¹6jÓÔ–²(#û`¹“w ğ·æ§ˆ9ü~T'›WÜ&jÂöË	ÈyñÀyÿ õ÷ìÓ.Mim»ô¦­½‰Ø%xÈŸó¨mÅŸJBñÂUÈç>9óú}k1ŒŠW‚˜Æ1JcÅ)Œc¦1ŒRüÇŸç”ãæ ®@=óÇXl"ÉA`b@Ås‡z,7peÀó,¡¹m¼
+Ş’ª(>‚GóJ”Ä6‘!Ä´ÓI*RÔGàäøÍ|­iBJÖBR‘’O÷Ş»™9¶…(8XÂº† Eª2Î—÷İ NL  QQA">ıÇm&¶B,ß2q-]­;”7d[‰Xÿ Ç%„Â _Ã#œ=dÄL%!AˆIraaìu×¿SôsÑ§S]Q:+wòƒRZí©J¬”ÕÜí?¡EHv?UŒÚR¢¬ÑÒ+eAº`äš‡B½õ	ñ|êFõ¼ºŸÜÛYJÜ^öÖ’w"âñvœ°LÊ¡SÕ3|AÁ0ùØ9À	vÊ×h±±dˆ^ƒd ê£>Êæf"Ñg‚KbZ\yåğ0„d‚F $¨09»²åªf¦Ûgd¸ûŠØqÎ*Ü3´$rsØd×õfUWnr¿’—tp¢«ÅÙƒÀv‡Ë0 qÀ”Š”â`äÜ›Èçâü.?¸ò,Î`WlG"&ù„Î=C	¹óÏw<ùóÆb«á¿3®4fÙ4	. ­Öj^ ¸3Dï÷îîk´dõ²•önUO´l‰FÉ/»•Š¬J;‘Z eÎŒ‰CIG0mõê/ãMĞ/LLãŸì}™2,'}Ù×ìk££lŸ*¡t­ií¤Ğ
+ØØ·TÀGPl¤#S¹#½*¢R­Dëıùçk›qŸ¸B
+RóY §m…pJyÀ$sÉ>1z†Á|Ó÷i6‰É*•¤,¶JwR¬$‘ÈÀÈøVTM%í4d_ £ÌÄã@8x÷x÷Î’T´èdÊæhõøTÔT©¦ñã¦0	ú½œv$àî˜”í7b'ï@Â9%ñ[ÓGkÅ6Î” ^66±EÔ‹7×
+¥·P¿Nxo’<»y¨u¯-§a¤#dáx©hörJ5tŠí¸HàlÆşüÛ[yZgíÍ#’°ÉJI¡C©ÈÎşÁ¢‘X¶’3dccê:påõÿ ™+¹p-H©ÑıZêíÇ¥ÎÚím©Éší)Æ¶»0°†÷” ä‡¼4ÊŒàr@Í\}è.¢êœÉ²¥Ë~Ça·Gõ^¹Tñ[‡”¶Ëg`pğ
+à6ƒÈ<–cœ*¢º®[dÁ˜	.Ê]µ%Qí ¯FE‘M³¤%Míß½ÖË$hÆö…àT{ e&šeñê+ñUv>C¼#dc{Rb ˆ0åÑ4Uj©½Ô¢ÁÚ¥ÛXkékš³øë—Lìî–s/aTA“¥Q8Ùœª¢³c¸QAU"eø	Àù„=Äx÷|ÿ ?¶Z:©ÚÆE²4ËÔ_e’ ğW!›Á[p' çÆ?XOTt éÎ¨rÅì»ÄT´Ô†å8Âc­HsıŠl:î1Ïo«§f…²´3ØwÉ<M5='	 'l\qÈµ|ÍÁRvÉÑCørŠJqä
+%ó»…
+›u•?v’‡ça!áïöãŸûır=ID*«¢ÌÃ=<•ˆM6 ÎQ(¿šh<'3 ”¥Q«ù¤ EhÇ-\ ¯¹©]Ëlc5$Ô±è†ş„Ü)TõSôŞ °0™Š\@¢ö
+T¤9Øº‚¨5™>MÍ—H»¦5l@l¨3/)GQòÊIÏ#“Ç<f¢qeµ$¤deŒøÉÇÔöïXìYcº]Ë“¸\¹vàâ"#ÉÜ9Yaçÿ ™àGÏnq7À>@<ˆ€ à<8 àDx ÷üèRGÓà{“¤ `äÈ˜ÉJ<¹L{¸äG1[·ş/9hÛ¶â£^¢¶eVñ¦Ş•>ÉTk+µäee
+ÊÇ®Qtñ4äé°‰ âÊêqû¸¶²deø`¾;¥RKiõ†¼¶ôëHÆ¼LüÖÒÃ³)@yåz)$$¸¤£°8Œİ³W>‘ÑZ‹Z8`i›c·Yhm„–P+ËêC-•'•í+X
+V6§ıØÔÔ¿ôG!eŸ&Ñºm[=WcxDŒ[´½mê¶I7æùtb_@ÂµzjÒ€Gƒ7Ö„\Tu0ÍãV1ÈEIÉn†úeé’½2»;¬Şmx»µw²¶*ä}Æé6™Vµ RÉgı ’DÇ‰laÒ“ùÅÆ;¡L¡C w¯í	é‹å\•yH¼³6‹1]ƒ3T¨-Z¢«Un‚`VsÈ®R*‚ªàc¨ Qä
+'ğ93è—â'@°kè^¤çjö
+nµÙ.^R,6Í/J×ñ±’T	!"÷ØÔì¶&RÔÑâQÌXëVV¹²Ûa'™½`ÜªĞk/\µÆ¾×ÂÕnÒÛ´Ë’Œ©SnI)˜êmÒ¢ËÎ£kN†Ü€R²£Ú³šçìå®:e§Õ¨u•‘vÏi‘è´âh³ë¯jÃD¨îÿ O' ØÉ&²åÕ-Ÿ~Ö)r÷ÿ øi(²†™:ÍË´O4¤{†,Ÿ¡ÁD™I²+8I8Ó—°H¢ÆCÑpT•N2tç¯*İëË$mrnñ´İÛ¤ÆÉ%3bB:/ñ_‘#%Å29”L®ºBğ¯¾uÙ–CÕQb€œ¹:’ø¿iÇÕùqÔÚVé·ákí–“u²¤¾¶£´bÙÑ8”Œ}*É{tÂŸÔõ…­*Š|êºE¨ª°LÆ—j}ãU2’§\ë)Iš*³cpµÄsÈØæ6ˆûT4R¬’l»Õlğk·i2$I±v
+z¥xİÚ	l”İGq´é‰°Õ)ÄÚR¥N“©¤¶\i;ıE-`¥!J÷‚FÒ{ƒT{Úø,Òô¶Zµ?)¹k·¶Ûn%éM”ì*!sïáI ùšÃ¯\û»jWõÛ‰ù>¡·ŒíÜ“ÂÊìZûèW¬)JK©vğØè†–{(Hø—d¬r#<oJ\­“v-ÕÔ¨^¬ÑaµHÆ"óÔt¶õo+x«%¬ã$BÒÛÚdŸG!§ìs!dw¬-ëñk<#ô•»¦ô4šƒõ~m¶Ş]CtõÔç_ªİ  ZÅéˆyªŒ‹z3K4xÍ½ƒ­e³ÛEnQÄ‚Çì£Úõöï’MGL®ÉGM›"ò5tÇı›×,XÛÆıë>¯SA±]ÆG·Ò:ÊÃ° Ø$éÓWğûƒgF!)Rô„ÎTá œ¦Èæ2ÑND!ÏFôÏ¨SõG¶9x‚ÛĞáİ'&$¨O0ËR!²à­jS…†q»w¼Ÿ{€6c§ÚêŞ:I
+> Ô.ôßTXõ³“‰·[7í7±.zM¥Æ*K©m%HBñ¼¤)G9kø9í(¢zE´êIÙ#¼±ôå³ç(Ñs/6AGí¹@ÆpU•aöZR(‰¦çÓˆtÔ†Pf¶[ı\Qú¥²ô³5£¶öÜ]Äì+Tkw3¨µë/äeŠ¥1c…UUérB2ml–ƒHŸ]ëYåÚ/é¸fïLô	¥~º¾ê^—•¸ş%/}±gØ—	›u–Ü´*/â¢\$ñ’,#ë#K= å'0QĞÍ×{(äkë#é”® £Ë£öd}e”„c^wb’ÙëJö’o&ÛA!b’‹BÈX.“™EFïŸGË¾*#Õ)çşídÓ³n6GÜ·¬5í)~{ğŒWÔa…ïö_Eô§×Il¹.'²B¸bêWM-Zë_ß&è¨šÒÉ¨#<›+7ğäYVëŒÒ•tiÈ<œ‰
+’ê™ZP¹°hy:®¼ƒ‹jy3ÆI2™±œí‰´Öe’9’“t’Ó ‚M%i$s¢£öM™3|tŒíänª)'qQn“tÓIŠi&TÓñÚBr#Ú î<‡  _`.uğ’‰ÍF3”CÕôC¦+7+S(TWQP‰Ë´”Dâ—îœ ¹Ğr@¢ºb=¶n_Nô>‚°Bf÷¤´Õ¶ÈıŞ2•"$6¢É‘êádÉ-­ED¨ä?3XHœ¹ËRÒ¥ˆ¥Å*3%jZlà¥	ÜT¯t`Iâ¼Ñpv4i©TŒb­´¹‹À	®Ù¡¥Èr˜|€T(vö‰€â`G34Ár¹lİÊcÉ·nà|òU‘MBğ<ùä§ó˜VÜç9umÕû…iÆ­À¾ÿ 5;5
+Ü|€”xQøx‘(÷  æ†°´‹j<v`É°ˆ~á¢)ÏÄÿ ¿xŠõE(ûÒI^Ê£ç‚õ=Îj-x ¾Ş‡Ïò®×ÆUõˆ¦1ŒR˜Æ1JcÅ)Œe@=ó‚p3ŒöãêqJé§$KåñÀN)ö@|¸t²…E«b‡¿+,rD "R	ôËL_Tß¾]P]Ó2Î×8UÊƒÊ‡ €yD TÛ¶Sj‚)ı3Ñ\]™yˆ¸ÎDShƒ™¥ÊàêÀ¦}“:×÷ïE!œç@…(<qÀÇü¡ôúˆ><r9Iu&ô·d³ieÅ¥ûÏí8'iHÀ^ş{qÈÂ]¥€¢œ¥p9Çº/­k™ı©ËËšÂ7`Ã6pdfo=At@0Ì±NÖòôñ·É%)#ª  DÅ@ò¬ßöz:ÀÜò)ïF«1³iˆšÉÙÑr
+3U;]	ËYH§êE3‘#Ğjú³7g°9Oğ‡¬=fÒS'$‘UY€í×ñŞè¢Ù×¿F´#T²ETÆ?ªm3v²OJp±£éqì¯5ëKØ¨ñ:C5:Å•œÃÁ¦²'“tRQÃV»¤tÄènÑĞïÆfh~“ë×.¢4<ÊQZs`ÏÅD²¸İ«1IÃ>°lÅì1ØEDAÑ¶_/gYGUç•”0Ü?gã<6Áó¡®:x2Ô«§¤ü”2 G¦R¦ÒÚÖà8Kƒ%M$œ­C y¸zBİÆ×>Çzk{På] ©°ä…ºŒ’ĞKB—µ+PÆO~Û¿Ùã´O;î¾³:¡‚ƒ·jıNs³Õ#ÛÖíNŞKTÙŒr×`‹Ò7}g	ãjP±oä›şíg-2¦È[ÿ ,n©:šÜıaïKÎÿ Şö—Öítz&UERjÆ>·^®Q*Pl=zÍN©Tc! !ÓhÁIg*GÏ<[jşw’ú/âKÖUKmÀW/¿²o:bF6y&6Xdä¤”váÍ‚íN„5î9G°öN!;Ë2½Bq4„c‘y/|u-ƒ¬û5o¦ş²úfaÒ¾Àµ„öªR^ÕmØUx<“u£õtÌ#*ºQÆ‡]âÕªÜ«Û[(÷ñ)A+0ùœ³§—…Ò—M•¨,Z&5ìÑx>XV÷½fRáRò…6­Í3øB³‚OõKº©wÔOİ'hİB÷´ªJ”ú,ó<T§ÙHB˜ØêW¼n
+QI%*ÆWşİ9Vt§@´UØ6.Ò–İñ¡ƒ`Uà¦áëğ/[@Á–‘b³¾3sg¨Ä2Y³huc²˜aeÇEnÜò3zu‹öª"İñN"Ñ‘œ5féóaAÄÛG¶9S:F9S½HÌ‘QTJ›“ˆ~ácöuıÓÇÂçáÉT{d³IÌJFU*º“¦½BÂ}óy5î…€g7c4Ïãsôš\cWWwéÇ(UÌ‡İìOÖÖ¡ë_bÛêJ¾ê¦¡¬ßKDI½`gtâïÍ&ÃH2éæÂ³¥–¬¥c‹q(ğ Æİ/a]ó›ÒE-ûDôç¬z…\<óÖ{]¾+•>;i”é¸™ú
+’ÂhFˆ„$ÈÈ(„-d$_İ.ë^Òšjf·«Ú®íÇ[¯F”ŠÒÉVï]Íád#İ'D«5¸æÕvªëz÷P‘6új¢ãöv-5‚bJ@UJFÉğJƒ”ä+Í“]ÂU—»)öª=õg$“p<÷fõ«æm_³\™½l‹Æ“ôœ6r‘WETÄxäª$¡Rÿ @{L `Zµ&ÑØİ:¥®«û0êÈA[îl îm+¶éXìŸÀŒşÓg­Â3?³òoT*Z´á÷âË2m.Q„à´¸Iüì;ö2¥`¼cè¥¤,H*jôäj.cAVÍÜµA%š»BEš‚‚)ÆL ä)€DÒ©mÚÇK‰ZnÀ~îºKTÍíÍ}•û:¥±î2ë¨¥*PXN 	Óş¤H³j;Ë×‹Î£vCÎ%µ4ˆÁ²4U¶qjyu();{ç8à	eì:†:`šd9Õ8¨˜&šd1Î©ÄàDÓ)@DÇ8•0(˜@ G-íè’‘	±ØÕ–j«c¢‘wÿ *™SYê‚b-gª©Àˆ:ù–IVDçcš
+ ícÓìîôÖÏÖ›WÊÅOÄCìš%ºƒ1#j™JeŒ]Æôçñ*;rá’rlÛ¾QÄyŸ¶xÌH¸j²]äEGÑ-5ä¤BµÛÅõ*Ì-b2ºÚ¨¼ù–fcÃÇÇÆ3|åÊ‰¨£Ò›Õp*i,¡‡÷ˆ‰S$ÖÑr›l“
+smí}@Z¿ø†ÒJlx#¸ªá¸Zi.<ä[Ü¦ÔËAm"L4!yI-Å+ƒ‚F<U‰‘qâV]hµˆæ%ÜŠòQnS7rkÃÍ•9¨¥Êaà;Vc ˆJ=¢ b˜W_åb¯¾ô~Á³<ƒdÆß¢6-Q'*¶hêËGŸEÔ+d–(²E&7Z;Ô'¤+·íTHEP›7*õ;Ê²?áµ+y«Í ”Æodf7*œÅà Ae%1^H@
+E†fÙ”L‰å/zŸUmR5.ÏÖ:ïd&Ï¼Ì‰£ÖnheKÚ¡Ù–Å L©x*¦n	@)@â`!;AgØbu—¥Ñ¬é™ìN¼Ôe{NBÖÃÌç+J°AÇœb¶¡ıUw¦¦ªËƒB˜R¢¶êc•¡æ¶…%Â¼
+‚‘œáiIHàVƒ*[ôA×Í–Ôé"´å[ûçâÑãR§(Ş[½?@Ç#'3)’Be–	Å
+š`p:FÉû·+¶¿†ôuŸ/cØÜcªÖµ!W4¬¤^ŠŞÒÓª*®ªÉüË/ÙÍIO‹é¦Ø–m•ts¥OhãtQÑ±Ïê¤®š^à7üÖÄöıšÌ8çWit{£¦õN×Õ”íW­õÕSvkK&ª¾£C£V*	)vÎU­¯EÇ•ê´Û?ÊË€®U”M>\";^ğªtïÙ¶

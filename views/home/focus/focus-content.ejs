@@ -1,0 +1,23 @@
+<head>
+    <title>法律法规</title>
+    <%- include('../header/header') %>
+    <link rel="stylesheet" href="/stylesheets/focus/focus.css"/>
+    <link rel="stylesheet" href="/stylesheets/focus/focus-content.css"/>
+    <script type="text/javascript" src="/javascripts/webjs/focus/focus.js"></script>
+
+</head>
+<body class="focus-body">
+<%- include('../headercontent/public-header-nav') %>
+<%- include('../nav/public-nav') %>
+
+<div class="focus-content">
+    <h2>
+        <center><strong><%=focusone.ftitle%></strong></center>
+    </h2>
+    <hr class="focus-line"/>
+    <div><%-focusone.fbio%></div>
+</div>
+
+<%- include('../footer/public-footer') %>
+</body>
+</html>

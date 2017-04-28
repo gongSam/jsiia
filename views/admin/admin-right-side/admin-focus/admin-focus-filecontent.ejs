@@ -1,0 +1,33 @@
+<div class="admin-subbody">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">热点关注</h3>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped bs-events-table">
+                    <thead>
+                    <tr>
+                        <th>热点关注图片</th>
+                        <th>功能</th>
+                    </tr>
+                    </thead>
+                    <% ffocusall.forEach(function (focus){ %>
+                    <tbody>
+                    <tr>
+                        <td><img class="admin-focus-img" src="/uploadfiles/<%=focus.favatar %>"/></td>
+                        <td>
+                            <div class="item">
+                                <a href="/admin/<%=focus._id %>/fileremove"><span class="glyphicon glyphicon-trash" style="color:red"/>  </a>
+                                <a href="/admin/admin-focus/<%=focus._id%>/admin-focus-fileup" ><span class="glyphicon glyphicon-pencil"/> </a>
+                                <a href="/admin/admin-focus/admin-focus-files" ><span class="glyphicon glyphicon-plus"/> </a>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <% }) %>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

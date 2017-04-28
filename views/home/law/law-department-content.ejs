@@ -1,0 +1,23 @@
+<head>
+    <title>法律法规</title>
+    <%- include('../header/header') %>
+    <link rel="stylesheet" href="/stylesheets/law/law.css"/>
+    <link rel="stylesheet" href="/stylesheets/law/law-department-content.css"/>
+    <script type="text/javascript" src="/javascripts/webjs/law/law.js"></script>
+
+</head>
+<body class="law-body">
+<%- include('../headercontent/public-header-nav') %>
+<%- include('../nav/public-nav') %>
+
+<div class="law-department-content">
+    <h2>
+        <center><strong><%= deplaw.deptitle%></strong></center>
+    </h2>
+    <hr class="law-department-line"/>
+    <div><%- deplaw.depbio%></div>
+</div>
+
+<%- include('../footer/public-footer') %>
+</body>
+</html>

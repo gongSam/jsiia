@@ -1,0 +1,23 @@
+<head>
+    <title>我会通告</title>
+    <%- include('../header/header') %>
+    <link rel="stylesheet" href="/stylesheets/notice/notice.css"/>
+    <link rel="stylesheet" href="/stylesheets/notice/notice-association-content.css"/>
+    <script type="text/javascript" src="/javascripts/webjs/notice/notice.js"></script>
+
+</head>
+<body class="notice-body">
+<%- include('../../home/headercontent/public-header-nav') %>
+<%- include('../../home/nav/public-nav') %>
+
+<div class="notice-association-content">
+    <h2>
+        <center><strong><%= associpublish.assocititle %></strong></center>
+    </h2>
+    <hr class="notice-association-line"/>
+    <div><%- associpublish.associbio %></div>
+</div>
+
+<%- include('../../home/footer/public-footer') %>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<div class="self-discipline-subbody">
+    <div class=" self-discipline-subbody-nav">
+        <ul class="nav nav-pills nav-stacked nav-style">
+            <li><img class="self-discipline-nav-pic img-responsive" src="../images/nav-pic/selfdiscipline-risk.jpg"/></li>
+            <li class="self-discipline-nav-li" id="self-discipline-nav1" role="presentation"><a class="self-discipline-nav-font" href="/self-discipline/selfdiscipline-proposal">倡议书</a></li>
+            <li class="self-discipline-nav-li" id="self-discipline-nav2" role="presentation"><a class="self-discipline-nav-font" href="/self-discipline/selfdiscipline-risk ">风险提示函</a></li>
+            <li class="self-discipline-nav-li" id="self-discipline-nav2" role="presentation"><a class="self-discipline-nav-font" href="/self-discipline/selfdiscipline-chapter ">专委会规程</a></li>
+        </ul>
+    </div>
+    <div class="self-discipline-subbody-content">
+        <div class="panel panel-border panel-primary">
+            <div class="self-discipline-rightbody-heading ">
+                <ol class="breadcrumb breadcrumb-style">
+                    <li ><a href="/self-discipline">自律规范</a></li>
+                    <li ><a href="/self-discipline/selfdiscipline-proposal">风险提示函</a></li>
+                </ol>
+            </div>
+            <div class="panel-body">
+                <div class="self-discipline-subbodybr">
+                    <h2>
+                        <ul>
+                            <li class="nowb">风险提示函</li>
+                        </ul>
+                    </h2>
+                    <ol>
+                        <% riskdiscipline.forEach(function (discipline) { %>
+                        <li><a href="/self-discipline/<%= discipline._id %>/selfdiscipline-risk-content" target="_blank"
+                               title="<%=discipline.risktitle %>"><%=discipline.risktitle %></a></li>
+                        <% }) %>
+
+                    </ol>
+                    <%for(var i=1;i<totalPage+1;++i){%>
+                    <a href="/self-discipline/selfdiscipline-risk?page=<%=i%>" style="color:black;"><%=i%></a>
+                    <%}%>
+                </div>
+                <img src ="../../images/subbody-icon/discipline-risk.png" class="img-responsive position">
+            </div>
+        </div>
+    </div>
+</div>

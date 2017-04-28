@@ -1,0 +1,51 @@
+<div class="notice-subbody">
+    <div class=" notice-subbody-nav">
+        <ul class="nav nav-pills nav-stacked nav-style">
+            <li><img class="notice-nav-pic img-responsive" src="../images/nav-pic/notice-nav.jpg"/></li>
+            <li class="notice-nav-li" id="notice-nav1" role="presentation"><a class="notice-nav-font" href="/notice/notice-association">我会通告</a></li>
+            <li class="notice-nav-li" id="notice-nav2" role="presentation"><a class="notice-nav-font" href="/notice/notice-monitor">其他通告</a></li>
+        </ul>
+        <img  class="notice-subbody-icon" src="../../images/subbody-icon/notice.png" >
+    </div>
+    <div class="notice-subbody-content">
+        <div class="panel panel-border panel-primary">
+            <div class="notice-rightbody-heading ">
+                <ol class="breadcrumb breadcrumb-style">
+                    <li ><a href="/notice">通知通告</a></li>
+                </ol>
+            </div>
+            <div class="panel-body">
+                <div class="notice-subbodybr">
+                    <h2>
+                        <ul>
+                            <li class="nowb">我会通告</li>
+                        </ul>
+                    </h2>
+                    <ol>
+                        <% monipublish.forEach(function (monipublish) { %>
+                        <li><span><font><%= monipublish.moniday %></font>/<%= monipublish.monimonth %></span><a
+                                    href="/notice/<%= monipublish._id %>/notice-monitor-content" target="_blank"
+                                    title="<%= monipublish.monititle %>"><%= monipublish.monititle %></a></li>
+                        <% }) %>
+
+                    </ol>
+                </div>
+                <div class="notice-subbodybr">
+                    <h2>
+                        <ul>
+                            <li class="nowb">其他通告</li>
+                        </ul>
+                    </h2>
+                    <ol>
+                        <% associpublish.forEach(function (associpublish) { %>
+                        <li><span><font><%= associpublish.associday %></font>/<%= associpublish.associmonth %></span><a
+                                    href="/notice/<%= associpublish._id %>/notice-association-content" target="_blank"
+                                    title="<%=associpublish.assocititle %>"><%=associpublish.assocititle %></a></li>
+                        <% }) %>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

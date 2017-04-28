@@ -1,0 +1,23 @@
+<head>
+    <title>法律法规</title>
+    <%- include('../header/header') %>
+    <link rel="stylesheet" href="/stylesheets/members/members.css"/>
+    <link rel="stylesheet" href="/stylesheets/members/members-emergency-content.css"/>
+    <script type="text/javascript" src="/javascripts/webjs/members/members.js"></script>
+
+</head>
+<body class="members-body">
+<%- include('../headercontent/public-header-nav') %>
+<%- include('../nav/public-nav') %>
+
+<div class="members-emergency-content">
+    <h2>
+        <center><strong><%= oneemergency.ntitle%></strong></center>
+    </h2>
+    <hr class="members-emergency-line"/>
+    <div><%- oneemergency.nbio%></div>
+</div>
+
+<%- include('../footer/public-footer') %>
+</body>
+</html>
